@@ -4,7 +4,7 @@
 
 Web3 is a Dark Forest. Phishing, scams, and malicious contracts have caused billions of losses for users. In addition, static detection solutions can be spoofed when dealing with complicated DeFi interactions.
 
-[BlockSec](https://blocksec.com) took a proactive approach to collect phishing URLs through [transaction pre-execution](https://mopsus.blocksec.com). Specifically, we have an internal system that monitors suspicious URLs and uses the Mopsus API to pre-execute the transactions from these URLs. By doing so, our approach cannot only confirm the phishing URLs but also can recover the malicious addresses involved.
+[BlockSec](https://blocksec.com) took a proactive approach to collect phishing URLs through [transaction pre-execution](https://mopsus.blocksec.com). Specifically, we have an internal system that monitors suspicious URLs and uses the Mopsus API to pre-execute the transactions from these URLs. By doing so, our approach can not only confirm the phishing URLs but also can recover the malicious addresses involved.
 
 To protect users, we share the detected phishing domains (other systems cannot catch that) with the community in this repo. We also share them with MetaMask.
 
