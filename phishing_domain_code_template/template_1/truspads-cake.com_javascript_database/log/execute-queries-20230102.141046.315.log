@@ -1,0 +1,183 @@
+[2023-01-02 14:10:46] This is codeql execute queries -J-Xmx3978M --off-heap-ram=3978 --verbosity=progress --logdir=/home/bowen/phishing/test/js_content/2023-01-02/truspads-cake.com/truspads-cake.com_javascript_database/log --evaluator-log-level=5 --insecurely-execute-ml-model-checksums= --warnings=show --qlconfig-file=/home/bowen/phishing/test/qlconfig.yml --rerun --output=/home/bowen/phishing/test/js_content/2023-01-02/truspads-cake.com/truspads-cake.com_javascript_database/results -- /home/bowen/phishing/test/js_content/2023-01-02/truspads-cake.com/truspads-cake.com_javascript_database/db-javascript /home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript/template2.ql
+[2023-01-02 14:10:46] Calling plumbing command: codeql resolve queries --qlconfig-file=/home/bowen/phishing/test/qlconfig.yml --format=json -- /home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript/template2.ql
+[2023-01-02 14:10:46] [PROGRESS] resolve queries> Recording pack reference getting-started/codeql-extra-queries-javascript at /home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript.
+[2023-01-02 14:10:46] Plumbing command codeql resolve queries completed:
+                      [
+                        "/home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript/template2.ql"
+                      ]
+[2023-01-02 14:10:46] Refusing fancy output: $CODEQL_ISATTY terminal indication is missing
+[2023-01-02 14:10:46] Creating executor with 1 threads.
+[2023-01-02 14:10:47] Calling plumbing command: codeql resolve extensions --qlconfig-file=/home/bowen/phishing/test/qlconfig.yml --insecurely-execute-ml-model-checksums= /home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript/template2.ql
+[2023-01-02 14:10:47] Calling plumbing command: codeql resolve queries --qlconfig-file=/home/bowen/phishing/test/qlconfig.yml --format startingpacks -- /home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript/template2.ql
+[2023-01-02 14:10:47] [PROGRESS] resolve queries> Recording pack reference getting-started/codeql-extra-queries-javascript at /home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript.
+[2023-01-02 14:10:47] Plumbing command codeql resolve queries completed:
+                      [
+                        "/home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript"
+                      ]
+[2023-01-02 14:10:47] Plumbing command codeql resolve extensions completed:
+                      {
+                        "models" : [ ],
+                        "data" : { }
+                      }
+[2023-01-02 14:10:47] [DETAILS] execute queries> Did not find any ML models.
+[2023-01-02 14:10:47] [SPAMMIER] execute queries> Data extensions for query 'template2.ql' in 'getting-started/codeql-extra-queries-javascript':
+                      {}
+[2023-01-02 14:10:47] Calling plumbing command: codeql resolve library-path --qlconfig-file=/home/bowen/phishing/test/qlconfig.yml --query=/home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript/template2.ql --format=json
+[2023-01-02 14:10:47] [DETAILS] resolve library-path> Resolving query at normalized path /home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript/template2.ql.
+[2023-01-02 14:10:47] [DETAILS] resolve library-path> Found enclosing pack 'getting-started/codeql-extra-queries-javascript' at /home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript.
+[2023-01-02 14:10:47] [DETAILS] resolve library-path> Adding compilation cache at /home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript/.cache.
+[2023-01-02 14:10:47] [DETAILS] resolve library-path> Resolving library dependencies from /home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript/qlpack.yml.
+[2023-01-02 14:10:47] [DETAILS] resolve library-path> QL pack dependencies for /home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript resolved OK.
+[2023-01-02 14:10:47] [DETAILS] resolve library-path> Found dbscheme through QL packs: /home/bowen/exercise/codeql_exercise/vscode-codeql-starter/ql/javascript/ql/lib/semmlecode.javascript.dbscheme.
+[2023-01-02 14:10:47] Plumbing command codeql resolve library-path completed:
+                      {
+                        "libraryPath" : [
+                          "/home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript",
+                          "/home/bowen/exercise/codeql_exercise/vscode-codeql-starter/ql/javascript/ql/lib"
+                        ],
+                        "dbscheme" : "/home/bowen/exercise/codeql_exercise/vscode-codeql-starter/ql/javascript/ql/lib/semmlecode.javascript.dbscheme",
+                        "compilationCache" : [
+                          "/home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript/.cache"
+                        ],
+                        "relativeName" : "getting-started/codeql-extra-queries-javascript/template2.ql",
+                        "qlPackName" : "getting-started/codeql-extra-queries-javascript"
+                      }
+[2023-01-02 14:10:47] [PROGRESS] execute queries> Compiling query plan for /home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript/template2.ql.
+[2023-01-02 14:10:47] [DETAILS] execute queries> Resolving imports for /home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript/template2.ql.
+[2023-01-02 14:10:48] Resolved file set for /home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript/template2.ql hashes to e55429b1a8db6f6baddb799150f58b26b0f84d00.
+[2023-01-02 14:10:48] [DETAILS] execute queries> Compilation cache hit for /home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript/template2.ql.
+[2023-01-02 14:10:48] [SPAMMY] execute queries> No database upgrade/downgrade needed for /home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript/template2.ql
+[2023-01-02 14:10:48] [PROGRESS] execute queries> [1/1] Found in cache: /home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript/template2.ql.
+[2023-01-02 14:10:48] [PROGRESS] execute queries> Starting evaluation of getting-started/codeql-extra-queries-javascript/template2.ql.
+[2023-01-02 14:10:48] Starting evaluation of /home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript/template2.ql
+[2023-01-02 14:10:48] (0s) Start query execution
+[2023-01-02 14:10:48] (0s) Beginning execution of template2.ql
+[2023-01-02 14:10:48] (0s)  >>> Created relation scopes/2@7781a3f0 with 29457 rows.
+[2023-01-02 14:10:48] (0s) Starting to evaluate predicate scopes_10#join_rhs/2@251149kb
+[2023-01-02 14:10:48] (0s)  >>> Created relation scopes_10#join_rhs/2@251149kb with 29457 rows.
+[2023-01-02 14:10:48] (0s)  >>> Created relation variables/3@fabdb5uc with 106359 rows.
+[2023-01-02 14:10:48] (0s) Starting to evaluate predicate variables_20#join_rhs/2@c01c30ag
+[2023-01-02 14:10:49] (0s)  >>> Created relation variables_20#join_rhs/2@c01c30ag with 106359 rows.
+[2023-01-02 14:10:49] (0s)  >>> Created relation is_arguments_object/1@cd566e3m with 25107 rows.
+[2023-01-02 14:10:49] (0s) Starting to evaluate predicate Variables#51c25ee5::GlobalVariable#f/1@24f7e0up
+[2023-01-02 14:10:49] (0s)  >>> Created relation Variables#51c25ee5::GlobalVariable#f/1@24f7e0up with 974 rows.
+[2023-01-02 14:10:49] (0s)  >>> Created relation bind/2@dfd8701j with 311275 rows.
+[2023-01-02 14:10:49] (0s)  >>> Created relation exprs/5@9d9c36qo with 1384699 rows.
+[2023-01-02 14:10:49] (0s) Starting to evaluate predicate exprs_10#join_rhs/2@bfc31eag
+[2023-01-02 14:10:50] (1s)  >>> Created relation exprs_10#join_rhs/2@bfc31eag with 1384699 rows.
+[2023-01-02 14:10:50] (1s) Starting to evaluate predicate @varaccess#f/1@093799dt
+[2023-01-02 14:10:50] (1s)  >>> Created relation @varaccess#f/1@093799dt with 311275 rows.
+[2023-01-02 14:10:50] (1s) Starting to evaluate predicate Variables#51c25ee5::VarAccess::getVariable#0#dispred#ff/2@79195b0k
+[2023-01-02 14:10:50] (1s)  >>> Created relation Variables#51c25ee5::VarAccess::getVariable#0#dispred#ff/2@79195b0k with 311275 rows.
+[2023-01-02 14:10:50] (1s) Starting to evaluate predicate Variables#51c25ee5::VarAccess::getVariable#0#dispred#ff_10#join_rhs/2@bba95ftk
+[2023-01-02 14:10:50] (1s)  >>> Created relation Variables#51c25ee5::VarAccess::getVariable#0#dispred#ff_10#join_rhs/2@bba95ftk with 311275 rows.
+[2023-01-02 14:10:50] (1s) Starting to evaluate predicate template2#cc1402ad::get_global_variable_access_container#2#fff/3@e04132v5
+[2023-01-02 14:10:50] (1s)  >>> Created relation template2#cc1402ad::get_global_variable_access_container#2#fff/3@e04132v5 with 8163 rows.
+[2023-01-02 14:10:50] (1s) Starting to evaluate predicate template2#cc1402ad::get_global_variable_access_container#2#fff_102#join_rhs/3@e98ba8rq
+[2023-01-02 14:10:50] (1s)  >>> Created relation template2#cc1402ad::get_global_variable_access_container#2#fff_102#join_rhs/3@e98ba8rq with 8163 rows.
+[2023-01-02 14:10:50] (1s) Starting to evaluate predicate CachedStages#4ddba366::Stages::Ast::backref#0#/0@659172n3
+[2023-01-02 14:10:50] (1s)  >>> Created relation CachedStages#4ddba366::Stages::Ast::backref#0#/0@659172n3 with 1 rows.
+[2023-01-02 14:10:50] (1s)  >>> Created relation stmts/5@1ea999sl with 129478 rows.
+[2023-01-02 14:10:50] (1s) Starting to evaluate predicate stmts_10#join_rhs/2@642b5cn4
+[2023-01-02 14:10:50] (1s)  >>> Created relation stmts_10#join_rhs/2@642b5cn4 with 129478 rows.
+[2023-01-02 14:10:50] (1s) Starting to evaluate predicate Stmt#8986e1c9::DeclStmt#f/1@6b6aaep5
+[2023-01-02 14:10:50] (1s)  >>> Created relation Stmt#8986e1c9::DeclStmt#f/1@6b6aaep5 with 17733 rows.
+[2023-01-02 14:10:50] (1s) Starting to evaluate predicate exprs_12034#join_rhs/5@72390atm
+[2023-01-02 14:10:50] (2s)  >>> Created relation exprs_12034#join_rhs/5@72390atm with 1384699 rows.
+[2023-01-02 14:10:50] (2s) Starting to evaluate predicate Stmt#8986e1c9::DeclStmt::getDecl#1#dispred#fff/3@a26dd6q3
+[2023-01-02 14:10:51] (2s)  >>> Created relation Stmt#8986e1c9::DeclStmt::getDecl#1#dispred#fff/3@a26dd6q3 with 36547 rows.
+[2023-01-02 14:10:51] (2s) Starting to evaluate predicate Stmt#8986e1c9::DeclStmt::getDecl#1#dispred#fff_102#join_rhs/3@ff73125g
+[2023-01-02 14:10:51] (2s)  >>> Created relation Stmt#8986e1c9::DeclStmt::getDecl#1#dispred#fff_102#join_rhs/3@ff73125g with 36547 rows.
+[2023-01-02 14:10:51] (2s) Starting to evaluate predicate exprs_20#count_range/2@946d83si
+[2023-01-02 14:10:51] (2s)  >>> Created relation exprs_20#count_range/2@946d83si with 1384699 rows.
+[2023-01-02 14:10:51] (2s) Starting to evaluate predicate stmts_20#join_rhs/2@fb954def
+[2023-01-02 14:10:51] (2s)  >>> Created relation stmts_20#join_rhs/2@fb954def with 129478 rows.
+[2023-01-02 14:10:51] (2s) Starting to evaluate predicate exprs_230#join_rhs/3@e7f558k1
+[2023-01-02 14:10:51] (2s)  >>> Created relation exprs_230#join_rhs/3@e7f558k1 with 1384699 rows.
+[2023-01-02 14:10:51] (2s) Starting to evaluate predicate m#Variables#51c25ee5::BindingPattern#b/1@00b80do5
+[2023-01-02 14:10:51] (2s)  >>> Created relation m#Variables#51c25ee5::BindingPattern#b/1@00b80do5 with 36547 rows.
+[2023-01-02 14:10:51] (2s) Starting to evaluate predicate _exprs_10#join_rhs#join_rhs/1@3ee2b75u
+[2023-01-02 14:10:51] (2s)  >>> Created relation _exprs_10#join_rhs#join_rhs/1@3ee2b75u with 329 rows.
+[2023-01-02 14:10:51] (2s)  >>> Created relation properties/5@f7365fva with 24366 rows.
+[2023-01-02 14:10:51] (2s) Starting to evaluate predicate properties_10#join_rhs/2@8c5e3153
+[2023-01-02 14:10:51] (2s)  >>> Created relation properties_10#join_rhs/2@8c5e3153 with 24366 rows.
+[2023-01-02 14:10:51] (2s) Starting to evaluate predicate Variables#51c25ee5::PropertyPattern#f/1@d3627frd
+[2023-01-02 14:10:51] (2s)  >>> Created relation Variables#51c25ee5::PropertyPattern#f/1@d3627frd with 942 rows.
+[2023-01-02 14:10:51] (2s) Starting to evaluate predicate exprs_20134#join_rhs/5@e67822h7
+[2023-01-02 14:10:51] (2s)  >>> Created relation exprs_20134#join_rhs/5@e67822h7 with 1384699 rows.
+[2023-01-02 14:10:51] (2s) Starting to evaluate predicate Variables#51c25ee5::ArrayPattern::getAnElement#0#dispred#bf/2@b3e17f9v
+[2023-01-02 14:10:51] (2s)  >>> Created relation Variables#51c25ee5::ArrayPattern::getAnElement#0#dispred#bf/2@b3e17f9v with 89 rows.
+[2023-01-02 14:10:51] (2s) Starting to evaluate predicate m#Variables#51c25ee5::BindingPattern::getABindingVarRef#0#dispred#bf/1@i1#622396bh (iteration 1)
+[2023-01-02 14:10:51] (2s) 			 - m#Variables#51c25ee5::BindingPattern::getABindingVarRef#0#dispred#bf_delta has 1031 rows (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:51] (2s) Starting to evaluate predicate m#Variables#51c25ee5::BindingPattern::getABindingVarRef#0#dispred#bf/1@i2#622396bh (iteration 2)
+[2023-01-02 14:10:51] (2s) Empty delta for m#Variables#51c25ee5::BindingPattern::getABindingVarRef#0#dispred#bf_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:51] (2s) Accumulating deltas
+[2023-01-02 14:10:51] (2s)  >>> Created relation m#Variables#51c25ee5::BindingPattern::getABindingVarRef#0#dispred#bf/1@622396bh with 1031 rows.
+[2023-01-02 14:10:51] (2s) Starting to evaluate predicate m#@varref#b/1@fa0278ql
+[2023-01-02 14:10:51] (2s)  >>> Created relation m#@varref#b/1@fa0278ql with 37578 rows.
+[2023-01-02 14:10:51] (2s) Starting to evaluate predicate @varref#b/1@a82b9a3g
+[2023-01-02 14:10:51] (3s)  >>> Created relation @varref#b/1@a82b9a3g with 37298 rows.
+[2023-01-02 14:10:51] (3s) Starting to evaluate predicate Variables#51c25ee5::BindingPattern#b/1@e598401t
+[2023-01-02 14:10:51] (3s)  >>> Created relation Variables#51c25ee5::BindingPattern#b/1@e598401t with 36547 rows.
+[2023-01-02 14:10:51] (3s) Starting to evaluate predicate exprs_032#join_rhs/3@f25a8cl2
+[2023-01-02 14:10:51] (3s)  >>> Created relation exprs_032#join_rhs/3@f25a8cl2 with 1384699 rows.
+[2023-01-02 14:10:51] (3s) Starting to evaluate predicate _Variables#51c25ee5::PropertyPattern#f__exprs_10#join_rhs#join_rhs_exprs_230#join_rhs_m#Variables#51__#join_rhs/2@eb9822dd
+[2023-01-02 14:10:51] (3s)  >>> Created relation _Variables#51c25ee5::PropertyPattern#f__exprs_10#join_rhs#join_rhs_exprs_230#join_rhs_m#Variables#51__#join_rhs/2@eb9822dd with 48 rows.
+[2023-01-02 14:10:51] (3s) Starting to evaluate predicate _Variables#51c25ee5::ArrayPattern::getAnElement#0#dispred#bf_m#Variables#51c25ee5::BindingPattern::g__#join_rhs/2@e2a9a91i
+[2023-01-02 14:10:51] (3s)  >>> Created relation _Variables#51c25ee5::ArrayPattern::getAnElement#0#dispred#bf_m#Variables#51c25ee5::BindingPattern::g__#join_rhs/2@e2a9a91i with 4 rows.
+[2023-01-02 14:10:51] (3s) Starting to evaluate predicate __exprs_10#join_rhs#join_rhs_exprs_230#join_rhs_m#Variables#51c25ee5::BindingPattern::getABindingVar__#join_rhs/2@48c1acle
+[2023-01-02 14:10:51] (3s)  >>> Created relation __exprs_10#join_rhs#join_rhs_exprs_230#join_rhs_m#Variables#51c25ee5::BindingPattern::getABindingVar__#join_rhs/2@48c1acle with 0 rows.
+[2023-01-02 14:10:51] (3s) Starting to evaluate predicate Variables#51c25ee5::ArrayPattern::getAnElement#0#dispred#bf_10#join_rhs/2@3209b0de
+[2023-01-02 14:10:51] (3s)  >>> Created relation Variables#51c25ee5::ArrayPattern::getAnElement#0#dispred#bf_10#join_rhs/2@3209b0de with 89 rows.
+[2023-01-02 14:10:51] (3s) Starting to evaluate predicate Variables#51c25ee5::BindingPattern::getABindingVarRef#0#dispred#bf/2@i1#825a03hm (iteration 1)
+[2023-01-02 14:10:51] (3s) 			 - Variables#51c25ee5::BindingPattern::getABindingVarRef#0#dispred#bf_delta has 1002 rows (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:51] (3s) Starting to evaluate predicate Variables#51c25ee5::BindingPattern::getABindingVarRef#0#dispred#bf/2@i2#825a03hm (iteration 2)
+[2023-01-02 14:10:51] (3s) 			 - Variables#51c25ee5::BindingPattern::getABindingVarRef#0#dispred#bf_delta has 51 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:51] (3s) Starting to evaluate predicate Variables#51c25ee5::BindingPattern::getABindingVarRef#0#dispred#bf/2@i3#825a03hm (iteration 3)
+[2023-01-02 14:10:51] (3s) 			 - Variables#51c25ee5::BindingPattern::getABindingVarRef#0#dispred#bf_delta has 1 rows (order for disjuncts: delta=317).
+[2023-01-02 14:10:51] (3s) Starting to evaluate predicate Variables#51c25ee5::BindingPattern::getABindingVarRef#0#dispred#bf/2@i4#825a03hm (iteration 4)
+[2023-01-02 14:10:51] (3s) Empty delta for Variables#51c25ee5::BindingPattern::getABindingVarRef#0#dispred#bf_delta (order for disjuncts: delta=317).
+[2023-01-02 14:10:51] (3s) Accumulating deltas
+[2023-01-02 14:10:51] (3s)  >>> Created relation Variables#51c25ee5::BindingPattern::getABindingVarRef#0#dispred#bf/2@825a03hm with 1054 rows.
+[2023-01-02 14:10:51] (3s) Starting to evaluate predicate Variables#51c25ee5::BindingPattern::getABindingVarRef#0#dispred#ff/2@ef36be2e
+[2023-01-02 14:10:51] (3s)  >>> Created relation Variables#51c25ee5::BindingPattern::getABindingVarRef#0#dispred#ff/2@ef36be2e with 82116 rows.
+[2023-01-02 14:10:52] (3s)  >>> Created relation decl/2@46baddj0 with 81062 rows.
+[2023-01-02 14:10:52] (3s) Starting to evaluate predicate Variables#51c25ee5::VarRef::getVariable#0#dispred#bf/2@db7a2271
+[2023-01-02 14:10:52] (3s)  >>> Created relation Variables#51c25ee5::VarRef::getVariable#0#dispred#bf/2@db7a2271 with 81078 rows.
+[2023-01-02 14:10:52] (3s) Starting to evaluate predicate Variables#51c25ee5::BindingPattern::getAVariable#0#dispred#ff/2@9adfffhk
+[2023-01-02 14:10:52] (3s)  >>> Created relation Variables#51c25ee5::BindingPattern::getAVariable#0#dispred#ff/2@9adfffhk with 393391 rows.
+[2023-01-02 14:10:52] (3s) Starting to evaluate predicate Variables#51c25ee5::Variable::getADeclarationStatement#0#dispred#bf/2@517ecdaf
+[2023-01-02 14:10:52] (3s)  >>> Created relation Variables#51c25ee5::Variable::getADeclarationStatement#0#dispred#bf/2@517ecdaf with 225 rows.
+[2023-01-02 14:10:52] (3s) Starting to evaluate predicate Variables#51c25ee5::Variable::getADeclarationStatement#0#dispred#bf_10#join_rhs/2@c00c7asv
+[2023-01-02 14:10:52] (3s)  >>> Created relation Variables#51c25ee5::Variable::getADeclarationStatement#0#dispred#bf_10#join_rhs/2@c00c7asv with 225 rows.
+[2023-01-02 14:10:52] (3s) Starting to evaluate predicate template2#cc1402ad::get_global_variable_declare_container#2#fff/3@a88043j3
+[2023-01-02 14:10:52] (3s)  >>> Created relation template2#cc1402ad::get_global_variable_declare_container#2#fff/3@a88043j3 with 45 rows.
+[2023-01-02 14:10:52] (3s) Starting to evaluate predicate template2#cc1402ad::get_global_variable_declare_container#2#fff_120#join_rhs/3@40891fsj
+[2023-01-02 14:10:52] (3s)  >>> Created relation template2#cc1402ad::get_global_variable_declare_container#2#fff_120#join_rhs/3@40891fsj with 45 rows.
+[2023-01-02 14:10:52] (3s) Starting to evaluate predicate template2#cc1402ad::get_global_variable_access_container#2#fff_120#join_rhs/3@dbe86970
+[2023-01-02 14:10:52] (3s)  >>> Created relation template2#cc1402ad::get_global_variable_access_container#2#fff_120#join_rhs/3@dbe86970 with 8163 rows.
+[2023-01-02 14:10:52] (3s) Starting to evaluate predicate template2#cc1402ad::judge_verifyAsset#4#ffff/4@a7d976bo
+[2023-01-02 14:10:52] (3s)  >>> Created relation template2#cc1402ad::judge_verifyAsset#4#ffff/4@a7d976bo with 0 rows.
+[2023-01-02 14:10:52] (3s) Inferred that template2#cc1402ad::judge_verifyAsset#4#ffff#nonempty/0@c6df3d1o is empty, due to template2#cc1402ad::judge_verifyAsset#4#ffff/4@a7d976bo.
+[2023-01-02 14:10:52] (3s) Inferred that #select#cpe#nullary#/0@4e5bd7vd is empty, due to template2#cc1402ad::judge_verifyAsset#4#ffff#nonempty/0@c6df3d1o.
+[2023-01-02 14:10:52] (3s) Inferred that _#select#cpe#nullary#_project#template2#cc1402ad::judge_askTokens#6#ffffff#shared/3@78410bf4 is empty, due to #select#cpe#nullary#/0@4e5bd7vd.
+[2023-01-02 14:10:52] (3s) Inferred that _AST#4fc16b88::AstNode::getLocation#0#dispred#bf__#select#cpe#nullary#_project#template2#cc1402ad::j__#shared/3@ebb56246 is empty, due to _#select#cpe#nullary#_project#template2#cc1402ad::judge_askTokens#6#ffffff#shared/3@78410bf4.
+[2023-01-02 14:10:52] (3s) Inferred that #select#query#ffffffff/8@c3a4e804 is empty, due to _#select#cpe#nullary#_project#template2#cc1402ad::judge_askTokens#6#ffffff#shared/3@78410bf4.
+[2023-01-02 14:10:52] (3s) Inferred that _Locations#c853d51f::Location::hasLocationInfo#5#dispred#bfffff__AST#4fc16b88::AstNode::getLocation#__#antijoin_rhs/2@6a3004jc is empty, due to _AST#4fc16b88::AstNode::getLocation#0#dispred#bf__#select#cpe#nullary#_project#template2#cc1402ad::j__#shared/3@ebb56246.
+[2023-01-02 14:10:52] (3s)  >>> Created relation #select#cpe#nullary#/0@4e5bd7vd with 0 rows.
+[2023-01-02 14:10:52] (3s)  >>> Created relation #select#query#ffffffff/8@c3a4e804 with 0 rows.
+[2023-01-02 14:10:52] (3s)  >>> Created relation _AST#4fc16b88::AstNode::getLocation#0#dispred#bf__#select#cpe#nullary#_project#template2#cc1402ad::j__#shared/3@ebb56246 with 0 rows.
+[2023-01-02 14:10:52] (3s)  >>> Created relation _#select#cpe#nullary#_project#template2#cc1402ad::judge_askTokens#6#ffffff#shared/3@78410bf4 with 0 rows.
+[2023-01-02 14:10:52] (3s)  >>> Created relation _Locations#c853d51f::Location::hasLocationInfo#5#dispred#bfffff__AST#4fc16b88::AstNode::getLocation#__#antijoin_rhs/2@6a3004jc with 0 rows.
+[2023-01-02 14:10:52] (3s)  >>> Created relation template2#cc1402ad::judge_verifyAsset#4#ffff#nonempty/0@c6df3d1o with 0 rows.
+[2023-01-02 14:10:52] (3s) Query done
+[2023-01-02 14:10:52] (3s) Sequence stamp origin is -6369952552950296724
+[2023-01-02 14:10:52] (3s) Pausing evaluation to sync to disk at sequence stamp o+0
+[2023-01-02 14:10:52] (3s) Unpausing evaluation
+[2023-01-02 14:10:52] Evaluation of /home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript/template2.ql produced BQRS results.
+[2023-01-02 14:10:52] [PROGRESS] execute queries> [1/1 eval 3.4s] Evaluation done; writing results to getting-started/codeql-extra-queries-javascript/template2.bqrs.
+[2023-01-02 14:10:52] [PROGRESS] execute queries> Shutting down query evaluator.
+[2023-01-02 14:10:52] Pausing evaluation to close the cache at sequence stamp o+1
+[2023-01-02 14:10:52] The disk cache is freshly trimmed; leave it be.
+[2023-01-02 14:10:52] Unpausing evaluation
+[2023-01-02 14:10:52] Terminating normally.

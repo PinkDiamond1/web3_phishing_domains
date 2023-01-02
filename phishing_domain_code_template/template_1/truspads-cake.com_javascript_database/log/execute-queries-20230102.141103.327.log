@@ -1,0 +1,112 @@
+[2023-01-02 14:11:03] This is codeql execute queries -J-Xmx3978M --off-heap-ram=3978 --verbosity=progress --logdir=/home/bowen/phishing/test/js_content/2023-01-02/truspads-cake.com/truspads-cake.com_javascript_database/log --evaluator-log-level=5 --insecurely-execute-ml-model-checksums= --warnings=show --qlconfig-file=/home/bowen/phishing/test/qlconfig.yml --rerun --output=/home/bowen/phishing/test/js_content/2023-01-02/truspads-cake.com/truspads-cake.com_javascript_database/results -- /home/bowen/phishing/test/js_content/2023-01-02/truspads-cake.com/truspads-cake.com_javascript_database/db-javascript /home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript/template4.ql
+[2023-01-02 14:11:03] Calling plumbing command: codeql resolve queries --qlconfig-file=/home/bowen/phishing/test/qlconfig.yml --format=json -- /home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript/template4.ql
+[2023-01-02 14:11:03] [PROGRESS] resolve queries> Recording pack reference getting-started/codeql-extra-queries-javascript at /home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript.
+[2023-01-02 14:11:03] Plumbing command codeql resolve queries completed:
+                      [
+                        "/home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript/template4.ql"
+                      ]
+[2023-01-02 14:11:03] Refusing fancy output: $CODEQL_ISATTY terminal indication is missing
+[2023-01-02 14:11:03] Creating executor with 1 threads.
+[2023-01-02 14:11:04] Calling plumbing command: codeql resolve extensions --qlconfig-file=/home/bowen/phishing/test/qlconfig.yml --insecurely-execute-ml-model-checksums= /home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript/template4.ql
+[2023-01-02 14:11:04] Calling plumbing command: codeql resolve queries --qlconfig-file=/home/bowen/phishing/test/qlconfig.yml --format startingpacks -- /home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript/template4.ql
+[2023-01-02 14:11:04] [PROGRESS] resolve queries> Recording pack reference getting-started/codeql-extra-queries-javascript at /home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript.
+[2023-01-02 14:11:04] Plumbing command codeql resolve queries completed:
+                      [
+                        "/home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript"
+                      ]
+[2023-01-02 14:11:04] Plumbing command codeql resolve extensions completed:
+                      {
+                        "models" : [ ],
+                        "data" : { }
+                      }
+[2023-01-02 14:11:04] [DETAILS] execute queries> Did not find any ML models.
+[2023-01-02 14:11:04] [SPAMMIER] execute queries> Data extensions for query 'template4.ql' in 'getting-started/codeql-extra-queries-javascript':
+                      {}
+[2023-01-02 14:11:04] Calling plumbing command: codeql resolve library-path --qlconfig-file=/home/bowen/phishing/test/qlconfig.yml --query=/home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript/template4.ql --format=json
+[2023-01-02 14:11:04] [DETAILS] resolve library-path> Resolving query at normalized path /home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript/template4.ql.
+[2023-01-02 14:11:04] [DETAILS] resolve library-path> Found enclosing pack 'getting-started/codeql-extra-queries-javascript' at /home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript.
+[2023-01-02 14:11:04] [DETAILS] resolve library-path> Adding compilation cache at /home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript/.cache.
+[2023-01-02 14:11:04] [DETAILS] resolve library-path> Resolving library dependencies from /home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript/qlpack.yml.
+[2023-01-02 14:11:04] [DETAILS] resolve library-path> QL pack dependencies for /home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript resolved OK.
+[2023-01-02 14:11:04] [DETAILS] resolve library-path> Found dbscheme through QL packs: /home/bowen/exercise/codeql_exercise/vscode-codeql-starter/ql/javascript/ql/lib/semmlecode.javascript.dbscheme.
+[2023-01-02 14:11:04] Plumbing command codeql resolve library-path completed:
+                      {
+                        "libraryPath" : [
+                          "/home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript",
+                          "/home/bowen/exercise/codeql_exercise/vscode-codeql-starter/ql/javascript/ql/lib"
+                        ],
+                        "dbscheme" : "/home/bowen/exercise/codeql_exercise/vscode-codeql-starter/ql/javascript/ql/lib/semmlecode.javascript.dbscheme",
+                        "compilationCache" : [
+                          "/home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript/.cache"
+                        ],
+                        "relativeName" : "getting-started/codeql-extra-queries-javascript/template4.ql",
+                        "qlPackName" : "getting-started/codeql-extra-queries-javascript"
+                      }
+[2023-01-02 14:11:04] [PROGRESS] execute queries> Compiling query plan for /home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript/template4.ql.
+[2023-01-02 14:11:04] [DETAILS] execute queries> Resolving imports for /home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript/template4.ql.
+[2023-01-02 14:11:05] Resolved file set for /home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript/template4.ql hashes to 761f4e51be1bf6e1b22a19b65a1a98a4ec3c8555.
+[2023-01-02 14:11:05] [DETAILS] execute queries> Compilation cache hit for /home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript/template4.ql.
+[2023-01-02 14:11:05] [WARN] execute queries> WARNING: Unused predicate get_global_variable_declare_container (/home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript/template4.ql:18,15-52)
+[2023-01-02 14:11:05] [SPAMMY] execute queries> No database upgrade/downgrade needed for /home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript/template4.ql
+[2023-01-02 14:11:06] [PROGRESS] execute queries> [1/1] Found in cache: /home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript/template4.ql.
+[2023-01-02 14:11:06] [PROGRESS] execute queries> Starting evaluation of getting-started/codeql-extra-queries-javascript/template4.ql.
+[2023-01-02 14:11:06] Starting evaluation of /home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript/template4.ql
+[2023-01-02 14:11:06] (0s) Start query execution
+[2023-01-02 14:11:06] (0s) Beginning execution of template4.ql
+[2023-01-02 14:11:06] (0s)  >>> Created relation scopes/2@7781a3f0 with 29457 rows.
+[2023-01-02 14:11:06] (0s) Starting to evaluate predicate scopes_10#join_rhs/2@251149kb
+[2023-01-02 14:11:06] (0s)  >>> Created relation scopes_10#join_rhs/2@251149kb with 29457 rows.
+[2023-01-02 14:11:06] (0s)  >>> Created relation variables/3@fabdb5uc with 106359 rows.
+[2023-01-02 14:11:06] (0s) Starting to evaluate predicate variables_20#join_rhs/2@c01c30ag
+[2023-01-02 14:11:06] (0s)  >>> Created relation variables_20#join_rhs/2@c01c30ag with 106359 rows.
+[2023-01-02 14:11:06] (0s)  >>> Created relation is_arguments_object/1@cd566e3m with 25107 rows.
+[2023-01-02 14:11:06] (0s) Starting to evaluate predicate Variables#51c25ee5::GlobalVariable#f/1@24f7e0up
+[2023-01-02 14:11:06] (0s)  >>> Created relation Variables#51c25ee5::GlobalVariable#f/1@24f7e0up with 974 rows.
+[2023-01-02 14:11:06] (0s)  >>> Created relation bind/2@dfd8701j with 311275 rows.
+[2023-01-02 14:11:06] (0s) Starting to evaluate predicate bind_10#join_rhs/2@842f0cje
+[2023-01-02 14:11:06] (0s)  >>> Created relation bind_10#join_rhs/2@842f0cje with 311275 rows.
+[2023-01-02 14:11:06] (0s)  >>> Created relation exprs/5@9d9c36qo with 1384699 rows.
+[2023-01-02 14:11:06] (0s) Starting to evaluate predicate exprs_10#join_rhs/2@bfc31eag
+[2023-01-02 14:11:07] (1s)  >>> Created relation exprs_10#join_rhs/2@bfc31eag with 1384699 rows.
+[2023-01-02 14:11:07] (1s) Starting to evaluate predicate @varaccess#f/1@093799dt
+[2023-01-02 14:11:07] (1s)  >>> Created relation @varaccess#f/1@093799dt with 311275 rows.
+[2023-01-02 14:11:07] (1s) Starting to evaluate predicate template4#76ff040c::get_global_variable_access_container#2#fff/3@c14ecdq9
+[2023-01-02 14:11:07] (1s)  >>> Created relation template4#76ff040c::get_global_variable_access_container#2#fff/3@c14ecdq9 with 8163 rows.
+[2023-01-02 14:11:07] (1s) Starting to evaluate predicate template4#76ff040c::get_global_variable_access_container#2#fff_102#join_rhs/3@29730842
+[2023-01-02 14:11:07] (1s)  >>> Created relation template4#76ff040c::get_global_variable_access_container#2#fff_102#join_rhs/3@29730842 with 8163 rows.
+[2023-01-02 14:11:07] (1s)  >>> Created relation stmts/5@1ea999sl with 129478 rows.
+[2023-01-02 14:11:07] (1s) Starting to evaluate predicate exprs_13024#join_rhs/5@75f4a2rt
+[2023-01-02 14:11:08] (2s)  >>> Created relation exprs_13024#join_rhs/5@75f4a2rt with 1384699 rows.
+[2023-01-02 14:11:08] (2s) Starting to evaluate predicate AST#4fc16b88::AstNode::getChild#1#dispred#fff/3@7d24d5o4
+[2023-01-02 14:11:08] (2s)  >>> Created relation AST#4fc16b88::AstNode::getChild#1#dispred#fff/3@7d24d5o4 with 1514177 rows.
+[2023-01-02 14:11:08] (2s) Starting to evaluate predicate template4#76ff040c::get_global_function_container#2#fff/3@010d49dj
+[2023-01-02 14:11:08] (2s)  >>> Created relation template4#76ff040c::get_global_function_container#2#fff/3@010d49dj with 5395 rows.
+[2023-01-02 14:11:08] (2s) Starting to evaluate predicate template4#76ff040c::get_global_function_container#2#fff_120#join_rhs/3@3feb3aa2
+[2023-01-02 14:11:08] (2s)  >>> Created relation template4#76ff040c::get_global_function_container#2#fff_120#join_rhs/3@3feb3aa2 with 5395 rows.
+[2023-01-02 14:11:08] (2s) Starting to evaluate predicate template4#76ff040c::get_global_variable_access_container#2#fff_120#join_rhs/3@a1f0dd96
+[2023-01-02 14:11:08] (2s)  >>> Created relation template4#76ff040c::get_global_variable_access_container#2#fff_120#join_rhs/3@a1f0dd96 with 8163 rows.
+[2023-01-02 14:11:08] (2s) Starting to evaluate predicate template4#76ff040c::judge_askMint#4#ffff/4@abdb0do5
+[2023-01-02 14:11:08] (2s)  >>> Created relation template4#76ff040c::judge_askMint#4#ffff/4@abdb0do5 with 0 rows.
+[2023-01-02 14:11:08] (2s) Inferred that template4#76ff040c::judge_askMint#4#ffff#nonempty/0@4988c1s2 is empty, due to template4#76ff040c::judge_askMint#4#ffff/4@abdb0do5.
+[2023-01-02 14:11:08] (2s) Inferred that #select#cpe#nullary#/0@64b8a6rv is empty, due to template4#76ff040c::judge_askMint#4#ffff#nonempty/0@4988c1s2.
+[2023-01-02 14:11:08] (2s) Inferred that _#select#cpe#nullary#_project#template4#76ff040c::judge_init#4#ffff#shared/3@bb056e65 is empty, due to #select#cpe#nullary#/0@64b8a6rv.
+[2023-01-02 14:11:08] (2s) Inferred that _AST#4fc16b88::AstNode::getLocation#0#dispred#bf__#select#cpe#nullary#_project#template4#76ff040c::j__#shared/3@682036d5 is empty, due to _#select#cpe#nullary#_project#template4#76ff040c::judge_init#4#ffff#shared/3@bb056e65.
+[2023-01-02 14:11:08] (2s) Inferred that #select#query#ffffffff/8@1b7ce7d3 is empty, due to _#select#cpe#nullary#_project#template4#76ff040c::judge_init#4#ffff#shared/3@bb056e65.
+[2023-01-02 14:11:08] (2s) Inferred that _Locations#c853d51f::Location::hasLocationInfo#5#dispred#bfffff__AST#4fc16b88::AstNode::getLocation#__#antijoin_rhs/2@1822b539 is empty, due to _AST#4fc16b88::AstNode::getLocation#0#dispred#bf__#select#cpe#nullary#_project#template4#76ff040c::j__#shared/3@682036d5.
+[2023-01-02 14:11:08] (2s)  >>> Created relation template4#76ff040c::judge_askMint#4#ffff#nonempty/0@4988c1s2 with 0 rows.
+[2023-01-02 14:11:08] (2s)  >>> Created relation #select#cpe#nullary#/0@64b8a6rv with 0 rows.
+[2023-01-02 14:11:08] (2s)  >>> Created relation _Locations#c853d51f::Location::hasLocationInfo#5#dispred#bfffff__AST#4fc16b88::AstNode::getLocation#__#antijoin_rhs/2@1822b539 with 0 rows.
+[2023-01-02 14:11:08] (2s)  >>> Created relation #select#query#ffffffff/8@1b7ce7d3 with 0 rows.
+[2023-01-02 14:11:08] (2s)  >>> Created relation _AST#4fc16b88::AstNode::getLocation#0#dispred#bf__#select#cpe#nullary#_project#template4#76ff040c::j__#shared/3@682036d5 with 0 rows.
+[2023-01-02 14:11:08] (2s)  >>> Created relation _#select#cpe#nullary#_project#template4#76ff040c::judge_init#4#ffff#shared/3@bb056e65 with 0 rows.
+[2023-01-02 14:11:08] (2s) Query done
+[2023-01-02 14:11:08] (2s) Sequence stamp origin is -6369952479786712458
+[2023-01-02 14:11:08] (2s) Pausing evaluation to sync to disk at sequence stamp o+0
+[2023-01-02 14:11:08] (2s) Unpausing evaluation
+[2023-01-02 14:11:08] Evaluation of /home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript/template4.ql produced BQRS results.
+[2023-01-02 14:11:08] [PROGRESS] execute queries> [1/1 eval 2.6s] Evaluation done; writing results to getting-started/codeql-extra-queries-javascript/template4.bqrs.
+[2023-01-02 14:11:08] [PROGRESS] execute queries> Shutting down query evaluator.
+[2023-01-02 14:11:08] Pausing evaluation to close the cache at sequence stamp o+1
+[2023-01-02 14:11:08] The disk cache is freshly trimmed; leave it be.
+[2023-01-02 14:11:08] Unpausing evaluation
+[2023-01-02 14:11:08] Terminating normally.

@@ -1,0 +1,1281 @@
+[2023-01-02 14:10:25] This is codeql execute queries -J-Xmx3978M --off-heap-ram=3978 --verbosity=progress --logdir=/home/bowen/phishing/test/js_content/2023-01-02/truspads-cake.com/truspads-cake.com_javascript_database/log --evaluator-log-level=5 --insecurely-execute-ml-model-checksums= --warnings=show --qlconfig-file=/home/bowen/phishing/test/qlconfig.yml --rerun --output=/home/bowen/phishing/test/js_content/2023-01-02/truspads-cake.com/truspads-cake.com_javascript_database/results -- /home/bowen/phishing/test/js_content/2023-01-02/truspads-cake.com/truspads-cake.com_javascript_database/db-javascript /home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript/template1.ql
+[2023-01-02 14:10:25] Calling plumbing command: codeql resolve queries --qlconfig-file=/home/bowen/phishing/test/qlconfig.yml --format=json -- /home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript/template1.ql
+[2023-01-02 14:10:25] [PROGRESS] resolve queries> Recording pack reference getting-started/codeql-extra-queries-javascript at /home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript.
+[2023-01-02 14:10:25] Plumbing command codeql resolve queries completed:
+                      [
+                        "/home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript/template1.ql"
+                      ]
+[2023-01-02 14:10:25] Refusing fancy output: $CODEQL_ISATTY terminal indication is missing
+[2023-01-02 14:10:25] Creating executor with 1 threads.
+[2023-01-02 14:10:25] Calling plumbing command: codeql resolve extensions --qlconfig-file=/home/bowen/phishing/test/qlconfig.yml --insecurely-execute-ml-model-checksums= /home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript/template1.ql
+[2023-01-02 14:10:25] Calling plumbing command: codeql resolve queries --qlconfig-file=/home/bowen/phishing/test/qlconfig.yml --format startingpacks -- /home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript/template1.ql
+[2023-01-02 14:10:25] [PROGRESS] resolve queries> Recording pack reference getting-started/codeql-extra-queries-javascript at /home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript.
+[2023-01-02 14:10:25] Plumbing command codeql resolve queries completed:
+                      [
+                        "/home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript"
+                      ]
+[2023-01-02 14:10:26] Plumbing command codeql resolve extensions completed:
+                      {
+                        "models" : [ ],
+                        "data" : { }
+                      }
+[2023-01-02 14:10:26] [DETAILS] execute queries> Did not find any ML models.
+[2023-01-02 14:10:26] [SPAMMIER] execute queries> Data extensions for query 'template1.ql' in 'getting-started/codeql-extra-queries-javascript':
+                      {}
+[2023-01-02 14:10:26] Calling plumbing command: codeql resolve library-path --qlconfig-file=/home/bowen/phishing/test/qlconfig.yml --query=/home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript/template1.ql --format=json
+[2023-01-02 14:10:26] [DETAILS] resolve library-path> Resolving query at normalized path /home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript/template1.ql.
+[2023-01-02 14:10:26] [DETAILS] resolve library-path> Found enclosing pack 'getting-started/codeql-extra-queries-javascript' at /home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript.
+[2023-01-02 14:10:26] [DETAILS] resolve library-path> Adding compilation cache at /home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript/.cache.
+[2023-01-02 14:10:26] [DETAILS] resolve library-path> Resolving library dependencies from /home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript/qlpack.yml.
+[2023-01-02 14:10:26] [DETAILS] resolve library-path> QL pack dependencies for /home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript resolved OK.
+[2023-01-02 14:10:26] [DETAILS] resolve library-path> Found dbscheme through QL packs: /home/bowen/exercise/codeql_exercise/vscode-codeql-starter/ql/javascript/ql/lib/semmlecode.javascript.dbscheme.
+[2023-01-02 14:10:26] Plumbing command codeql resolve library-path completed:
+                      {
+                        "libraryPath" : [
+                          "/home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript",
+                          "/home/bowen/exercise/codeql_exercise/vscode-codeql-starter/ql/javascript/ql/lib"
+                        ],
+                        "dbscheme" : "/home/bowen/exercise/codeql_exercise/vscode-codeql-starter/ql/javascript/ql/lib/semmlecode.javascript.dbscheme",
+                        "compilationCache" : [
+                          "/home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript/.cache"
+                        ],
+                        "relativeName" : "getting-started/codeql-extra-queries-javascript/template1.ql",
+                        "qlPackName" : "getting-started/codeql-extra-queries-javascript"
+                      }
+[2023-01-02 14:10:26] [PROGRESS] execute queries> Compiling query plan for /home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript/template1.ql.
+[2023-01-02 14:10:26] [DETAILS] execute queries> Resolving imports for /home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript/template1.ql.
+[2023-01-02 14:10:26] Resolved file set for /home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript/template1.ql hashes to d6c7d3b487b7274aee303cc55be4120e1eaec42e.
+[2023-01-02 14:10:27] [DETAILS] execute queries> Compilation cache hit for /home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript/template1.ql.
+[2023-01-02 14:10:27] [WARN] execute queries> WARNING: Unused predicate get_var_decl_stmt (/home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript/template1.ql:52,13-30)
+[2023-01-02 14:10:27] [WARN] execute queries> WARNING: Unused predicate get_expr_stmt (/home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript/template1.ql:56,10-23)
+[2023-01-02 14:10:27] [WARN] execute queries> WARNING: Unused predicate get_if_stmt (/home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript/template1.ql:60,8-19)
+[2023-01-02 14:10:27] [SPAMMY] execute queries> No database upgrade/downgrade needed for /home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript/template1.ql
+[2023-01-02 14:10:27] [PROGRESS] execute queries> [1/1] Found in cache: /home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript/template1.ql.
+[2023-01-02 14:10:27] [PROGRESS] execute queries> Starting evaluation of getting-started/codeql-extra-queries-javascript/template1.ql.
+[2023-01-02 14:10:27] Starting evaluation of /home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript/template1.ql
+[2023-01-02 14:10:27] (0s) Start query execution
+[2023-01-02 14:10:27] (0s) Beginning execution of template1.ql
+[2023-01-02 14:10:27] (0s)  >>> Created relation guard_node/3@41dd8363 with 90989 rows.
+[2023-01-02 14:10:27] (0s)  >>> Created relation properties/5@f7365fva with 24366 rows.
+[2023-01-02 14:10:27] (0s)  >>> Created relation toplevels/2@14954abb with 118 rows.
+[2023-01-02 14:10:27] (0s)  >>> Created relation stmts/5@1ea999sl with 129478 rows.
+[2023-01-02 14:10:27] (0s)  >>> Created relation exprs/5@9d9c36qo with 1384699 rows.
+[2023-01-02 14:10:27] (0s)  >>> Created relation typeexprs/5@f3a8eevg with 0 rows.
+[2023-01-02 14:10:27] (0s) Inferred that typeexprs_0#antijoin_rhs/1@1f8af8lb is empty, due to typeexprs/5@f3a8eevg.
+[2023-01-02 14:10:27] (0s) Inferred that typeexprs_10#join_rhs/2@aa306aso is empty, due to typeexprs/5@f3a8eevg.
+[2023-01-02 14:10:27] (0s)  >>> Created relation typeexprs_0#antijoin_rhs/1@1f8af8lb with 0 rows.
+[2023-01-02 14:10:27] (0s)  >>> Created relation typeexprs_10#join_rhs/2@aa306aso with 0 rows.
+[2023-01-02 14:10:27] (0s) Starting to evaluate predicate exprs_230#join_rhs/3@e7f558k1
+[2023-01-02 14:10:28] (0s)  >>> Created relation exprs_230#join_rhs/3@e7f558k1 with 1384699 rows.
+[2023-01-02 14:10:28] (0s) Starting to evaluate predicate exprs_10#join_rhs/2@bfc31eag
+[2023-01-02 14:10:28] (1s)  >>> Created relation exprs_10#join_rhs/2@bfc31eag with 1384699 rows.
+[2023-01-02 14:10:28] (1s) Starting to evaluate predicate stmts_10#join_rhs/2@642b5cn4
+[2023-01-02 14:10:28] (1s)  >>> Created relation stmts_10#join_rhs/2@642b5cn4 with 129478 rows.
+[2023-01-02 14:10:28] (1s) Starting to evaluate predicate properties_10#join_rhs/2@8c5e3153
+[2023-01-02 14:10:28] (1s)  >>> Created relation properties_10#join_rhs/2@8c5e3153 with 24366 rows.
+[2023-01-02 14:10:28] (1s) Starting to evaluate predicate AST#4fc16b88::AstNode::getChild#1#dispred#fff/3@928ad4ct
+[2023-01-02 14:10:28] (1s)  >>> Created relation AST#4fc16b88::AstNode::getChild#1#dispred#fff/3@928ad4ct with 1538543 rows.
+[2023-01-02 14:10:28] (1s) Starting to evaluate predicate _exprs_10#join_rhs#antijoin_rhs#1/1@9aabaf29
+[2023-01-02 14:10:28] (1s)  >>> Created relation _exprs_10#join_rhs#antijoin_rhs#1/1@9aabaf29 with 1086 rows.
+[2023-01-02 14:10:28] (1s) Starting to evaluate predicate _exprs_10#join_rhs#antijoin_rhs/1@ca8cbfhj
+[2023-01-02 14:10:29] (1s)  >>> Created relation _exprs_10#join_rhs#antijoin_rhs/1@ca8cbfhj with 19712 rows.
+[2023-01-02 14:10:29] (1s) Starting to evaluate predicate @function#f/1@b1566arq
+[2023-01-02 14:10:29] (1s)  >>> Created relation @function#f/1@b1566arq with 26193 rows.
+[2023-01-02 14:10:29] (1s) Starting to evaluate predicate Variables#51c25ee5::Parameterized#f/1@4f11abkq
+[2023-01-02 14:10:29] (1s)  >>> Created relation Variables#51c25ee5::Parameterized#f/1@4f11abkq with 26723 rows.
+[2023-01-02 14:10:29] (1s) Starting to evaluate predicate @varaccess#f/1@093799dt
+[2023-01-02 14:10:29] (1s)  >>> Created relation @varaccess#f/1@093799dt with 311275 rows.
+[2023-01-02 14:10:29] (1s) Starting to evaluate predicate @varref#f/1@a2905bf6
+[2023-01-02 14:10:29] (1s)  >>> Created relation @varref#f/1@a2905bf6 with 392337 rows.
+[2023-01-02 14:10:29] (1s) Starting to evaluate predicate Variables#51c25ee5::BindingPattern#f/1@dbbcf1kk
+[2023-01-02 14:10:29] (1s)  >>> Created relation Variables#51c25ee5::BindingPattern#f/1@dbbcf1kk with 392706 rows.
+[2023-01-02 14:10:29] (1s) Starting to evaluate predicate Variables#51c25ee5::Parameter#f/1@494024aa
+[2023-01-02 14:10:29] (1s)  >>> Created relation Variables#51c25ee5::Parameter#f/1@494024aa with 38300 rows.
+[2023-01-02 14:10:29] (1s) Starting to evaluate predicate AST#4fc16b88::AstNode::getParent#0#dispred#ff/2@1132b2vm
+[2023-01-02 14:10:30] (2s)  >>> Created relation AST#4fc16b88::AstNode::getParent#0#dispred#ff/2@1132b2vm with 1538543 rows.
+[2023-01-02 14:10:30] (2s) Starting to evaluate predicate Expr#92cb915f::ExprOrType#f/1@345548lh
+[2023-01-02 14:10:30] (2s)  >>> Created relation Expr#92cb915f::ExprOrType#f/1@345548lh with 1384699 rows.
+[2023-01-02 14:10:30] (2s) Starting to evaluate predicate TypeScript#092b5fa0::TypeAssertion#f/1@dde1d28q
+[2023-01-02 14:10:30] (2s)  >>> Created relation TypeScript#092b5fa0::TypeAssertion#f/1@dde1d28q with 0 rows.
+[2023-01-02 14:10:30] (2s) Inferred that _TypeScript#092b5fa0::TypeAssertion#f_exprs_230#join_rhs#join_rhs/2@c5be9a8c is empty, due to TypeScript#092b5fa0::TypeAssertion#f/1@dde1d28q.
+[2023-01-02 14:10:30] (2s)  >>> Created relation _TypeScript#092b5fa0::TypeAssertion#f_exprs_230#join_rhs#join_rhs/2@c5be9a8c with 0 rows.
+[2023-01-02 14:10:30] (2s) Starting to evaluate predicate _exprs_10#join_rhs#antijoin_rhs#3/1@c7a4cd9c
+[2023-01-02 14:10:30] (2s)  >>> Created relation _exprs_10#join_rhs#antijoin_rhs#3/1@c7a4cd9c with 16968 rows.
+[2023-01-02 14:10:30] (2s) Starting to evaluate predicate _exprs_10#join_rhs#antijoin_rhs#5/1@b6af57a9
+[2023-01-02 14:10:30] (2s)  >>> Created relation _exprs_10#join_rhs#antijoin_rhs#5/1@b6af57a9 with 0 rows.
+[2023-01-02 14:10:30] (2s) Starting to evaluate predicate _exprs_10#join_rhs#antijoin_rhs#4/1@d248da49
+[2023-01-02 14:10:30] (2s)  >>> Created relation _exprs_10#join_rhs#antijoin_rhs#4/1@d248da49 with 22101 rows.
+[2023-01-02 14:10:30] (2s) Starting to evaluate predicate _exprs_10#join_rhs#antijoin_rhs#2/1@0169eedg
+[2023-01-02 14:10:30] (2s)  >>> Created relation _exprs_10#join_rhs#antijoin_rhs#2/1@0169eedg with 53205 rows.
+[2023-01-02 14:10:30] (2s) Starting to evaluate predicate Expr::ExprOrType_not_AssignExpr_ParExpr_SatisfiesExpr_SeqExpr_TypeAssertion#f/1@455f3dv1
+[2023-01-02 14:10:30] (2s)  >>> Created relation Expr::ExprOrType_not_AssignExpr_ParExpr_SatisfiesExpr_SeqExpr_TypeAssertion#f/1@455f3dv1 with 1292425 rows.
+[2023-01-02 14:10:30] (2s) Starting to evaluate predicate Expr#92cb915f::Assignment#f/1@cc0f1eoo
+[2023-01-02 14:10:30] (2s)  >>> Created relation Expr#92cb915f::Assignment#f/1@cc0f1eoo with 57766 rows.
+[2023-01-02 14:10:30] (2s) Starting to evaluate predicate Expr#92cb915f::Assignment::getRhs#0#dispred#ff/2@c52a426f
+[2023-01-02 14:10:30] (2s)  >>> Created relation Expr#92cb915f::Assignment::getRhs#0#dispred#ff/2@c52a426f with 57766 rows.
+[2023-01-02 14:10:30] (2s) Starting to evaluate predicate _Expr#92cb915f::Assignment::getRhs#0#dispred#ff__exprs_10#join_rhs#antijoin_rhs#2#join_rhs/2@9bfa44nl
+[2023-01-02 14:10:30] (3s)  >>> Created relation _Expr#92cb915f::Assignment::getRhs#0#dispred#ff__exprs_10#join_rhs#antijoin_rhs#2#join_rhs/2@9bfa44nl with 53205 rows.
+[2023-01-02 14:10:30] (3s) Starting to evaluate predicate _exprs_10#join_rhs_exprs_230#join_rhs#join_rhs/2@0acda4pk
+[2023-01-02 14:10:30] (3s)  >>> Created relation _exprs_10#join_rhs_exprs_230#join_rhs#join_rhs/2@0acda4pk with 0 rows.
+[2023-01-02 14:10:30] (3s) Starting to evaluate predicate Expr#92cb915f::Assignment::getRhs#0#dispred#ff_10#join_rhs/2@ebff6a9c
+[2023-01-02 14:10:30] (3s)  >>> Created relation Expr#92cb915f::Assignment::getRhs#0#dispred#ff_10#join_rhs/2@ebff6a9c with 57766 rows.
+[2023-01-02 14:10:30] (3s) Starting to evaluate predicate exprs_032#join_rhs/3@f25a8cl2
+[2023-01-02 14:10:30] (3s)  >>> Created relation exprs_032#join_rhs/3@f25a8cl2 with 1384699 rows.
+[2023-01-02 14:10:30] (3s) Starting to evaluate predicate Expr#92cb915f::ParExpr::getExpression#0#dispred#ff/2@6bab869k
+[2023-01-02 14:10:30] (3s)  >>> Created relation Expr#92cb915f::ParExpr::getExpression#0#dispred#ff/2@6bab869k with 22101 rows.
+[2023-01-02 14:10:30] (3s) Starting to evaluate predicate Expr#92cb915f::ParExpr::getExpression#0#dispred#ff_10#join_rhs/2@b1bc27a4
+[2023-01-02 14:10:30] (3s)  >>> Created relation Expr#92cb915f::ParExpr::getExpression#0#dispred#ff_10#join_rhs/2@b1bc27a4 with 22101 rows.
+[2023-01-02 14:10:30] (3s) Starting to evaluate predicate CachedStages#4ddba366::Stages::Ast::backref#0#/0@659172n3
+[2023-01-02 14:10:30] (3s)  >>> Created relation CachedStages#4ddba366::Stages::Ast::backref#0#/0@659172n3 with 1 rows.
+[2023-01-02 14:10:30] (3s)  >>> Created relation stmt_containers/2@28d62eta with 129478 rows.
+[2023-01-02 14:10:30] (3s)  >>> Created relation expr_containers/2@27159fgk with 1384699 rows.
+[2023-01-02 14:10:30] (3s)  >>> Created relation entry_cfg_node/2@66d6a5ig with 26311 rows.
+[2023-01-02 14:10:30] (3s)  >>> Created relation exit_cfg_node/2@d598b8cb with 26311 rows.
+[2023-01-02 14:10:30] (3s) Starting to evaluate predicate exprs_20#count_range/2@946d83si
+[2023-01-02 14:10:30] (3s)  >>> Created relation exprs_20#count_range/2@946d83si with 1384699 rows.
+[2023-01-02 14:10:30] (3s) Starting to evaluate predicate CachedStages#4ddba366::Stages::Ast::ref#0#/0@4a1a8e6a
+[2023-01-02 14:10:30] (3s)  >>> Created relation CachedStages#4ddba366::Stages::Ast::ref#0#/0@4a1a8e6a with 1 rows.
+[2023-01-02 14:10:30] (3s) No need to promote strings for predicate CachedStages#4ddba366::Stages::Ast::ref#0#  as it does not contain computed strings.
+[2023-01-02 14:10:30] (3s)  >>> Created relation CachedStages#4ddba366::Stages::Ast::ref#0#/0@a64dbabb with 1 rows.
+[2023-01-02 14:10:30] (3s)  >>> Created relation CachedStages#4ddba366::Stages::Ast::backref#0#/0@a0e916hj with 1 rows.
+[2023-01-02 14:10:30] Cachaca resolved layer: #381 computed extensional evaluator CachedStages#4ddba366::Stages::Ast::backref#0#/0@a0e916hj
+[2023-01-02 14:10:30] (3s) Starting to evaluate predicate AST#4fc16b88::AstNode::getParent#0#dispred#ff_10#join_rhs/2@a280c4mu
+[2023-01-02 14:10:30] (3s)  >>> Created relation AST#4fc16b88::AstNode::getParent#0#dispred#ff_10#join_rhs/2@a280c4mu with 1538543 rows.
+[2023-01-02 14:10:30] (3s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i1#cba0bx4d (iteration 1)
+[2023-01-02 14:10:30] (3s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:30] (3s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i1#cba0bw4d (iteration 1)
+[2023-01-02 14:10:30] (3s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 118 rows (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:30] (3s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i2#cba0bx4d (iteration 2)
+[2023-01-02 14:10:30] (3s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 10224 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:30] (3s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:30] (3s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:30] (3s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i3#cba0bw4d (iteration 3)
+[2023-01-02 14:10:30] (3s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 10224 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:30] (3s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i4#cba0bx4d (iteration 4)
+[2023-01-02 14:10:30] (3s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 11533 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:30] (3s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:30] (3s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:30] (3s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i5#cba0bw4d (iteration 5)
+[2023-01-02 14:10:30] (3s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 11533 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:30] (3s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i6#cba0bx4d (iteration 6)
+[2023-01-02 14:10:30] (3s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 18727 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:30] (3s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:30] (3s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:30] (3s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i7#cba0bw4d (iteration 7)
+[2023-01-02 14:10:30] (3s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 18727 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:30] (3s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i8#cba0bx4d (iteration 8)
+[2023-01-02 14:10:30] (3s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 26034 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:30] (3s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:30] (3s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:30] (3s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i9#cba0bw4d (iteration 9)
+[2023-01-02 14:10:30] (3s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 26034 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:30] (3s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i10#cba0bx4d (iteration 10)
+[2023-01-02 14:10:30] (3s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 9117 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:30] (3s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:30] (3s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:30] (3s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i11#cba0bw4d (iteration 11)
+[2023-01-02 14:10:30] (3s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 9117 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:30] (3s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i12#cba0bx4d (iteration 12)
+[2023-01-02 14:10:30] (3s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 6508 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:30] (3s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:30] (3s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:30] (3s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i13#cba0bw4d (iteration 13)
+[2023-01-02 14:10:30] (3s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 6508 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:30] (3s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i14#cba0bx4d (iteration 14)
+[2023-01-02 14:10:30] (3s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 4477 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:30] (3s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:30] (3s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:30] (3s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i15#cba0bw4d (iteration 15)
+[2023-01-02 14:10:30] (3s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 4477 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:30] (3s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i16#cba0bx4d (iteration 16)
+[2023-01-02 14:10:30] (3s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 6968 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:30] (3s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:30] (3s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:30] (3s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i17#cba0bw4d (iteration 17)
+[2023-01-02 14:10:30] (3s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 6968 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:30] (3s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i18#cba0bx4d (iteration 18)
+[2023-01-02 14:10:30] (3s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 9370 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:30] (3s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:30] (3s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:30] (3s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i19#cba0bw4d (iteration 19)
+[2023-01-02 14:10:30] (3s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 9370 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:30] (3s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i20#cba0bx4d (iteration 20)
+[2023-01-02 14:10:30] (3s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 11719 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:30] (3s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:30] (3s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:30] (3s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i21#cba0bw4d (iteration 21)
+[2023-01-02 14:10:30] (3s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 11719 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:30] (3s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i22#cba0bx4d (iteration 22)
+[2023-01-02 14:10:31] (3s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 18412 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (3s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (3s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (3s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i23#cba0bw4d (iteration 23)
+[2023-01-02 14:10:31] (3s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 18412 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (3s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i24#cba0bx4d (iteration 24)
+[2023-01-02 14:10:31] (3s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 20625 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (3s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (3s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (3s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i25#cba0bw4d (iteration 25)
+[2023-01-02 14:10:31] (3s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 20625 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (3s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i26#cba0bx4d (iteration 26)
+[2023-01-02 14:10:31] (3s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 26450 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (3s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (3s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (3s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i27#cba0bw4d (iteration 27)
+[2023-01-02 14:10:31] (3s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 26450 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (3s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i28#cba0bx4d (iteration 28)
+[2023-01-02 14:10:31] (3s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 29646 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (3s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (3s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (3s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i29#cba0bw4d (iteration 29)
+[2023-01-02 14:10:31] (3s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 29646 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (3s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i30#cba0bx4d (iteration 30)
+[2023-01-02 14:10:31] (3s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 41757 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (3s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (3s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (3s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i31#cba0bw4d (iteration 31)
+[2023-01-02 14:10:31] (3s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 41757 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (3s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i32#cba0bx4d (iteration 32)
+[2023-01-02 14:10:31] (3s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 43688 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (3s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (3s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (3s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i33#cba0bw4d (iteration 33)
+[2023-01-02 14:10:31] (3s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 43688 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (3s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i34#cba0bx4d (iteration 34)
+[2023-01-02 14:10:31] (3s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 45030 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (3s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (3s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (3s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i35#cba0bw4d (iteration 35)
+[2023-01-02 14:10:31] (3s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 45030 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (3s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i36#cba0bx4d (iteration 36)
+[2023-01-02 14:10:31] (3s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 47852 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (3s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (3s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (3s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i37#cba0bw4d (iteration 37)
+[2023-01-02 14:10:31] (3s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 47852 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (3s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i38#cba0bx4d (iteration 38)
+[2023-01-02 14:10:31] (3s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 53381 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (3s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (3s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (3s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i39#cba0bw4d (iteration 39)
+[2023-01-02 14:10:31] (3s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 53381 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (3s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i40#cba0bx4d (iteration 40)
+[2023-01-02 14:10:31] (3s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 61279 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (3s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (3s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (3s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i41#cba0bw4d (iteration 41)
+[2023-01-02 14:10:31] (3s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 61279 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (3s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i42#cba0bx4d (iteration 42)
+[2023-01-02 14:10:31] (3s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 70668 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (3s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (3s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (3s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i43#cba0bw4d (iteration 43)
+[2023-01-02 14:10:31] (3s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 70668 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (3s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i44#cba0bx4d (iteration 44)
+[2023-01-02 14:10:31] (3s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 71151 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (3s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (3s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (3s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i45#cba0bw4d (iteration 45)
+[2023-01-02 14:10:31] (3s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 71151 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (3s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i46#cba0bx4d (iteration 46)
+[2023-01-02 14:10:31] (3s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 78946 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (3s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i47#cba0bw4d (iteration 47)
+[2023-01-02 14:10:31] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 78946 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i48#cba0bx4d (iteration 48)
+[2023-01-02 14:10:31] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 71715 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i49#cba0bw4d (iteration 49)
+[2023-01-02 14:10:31] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 71715 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i50#cba0bx4d (iteration 50)
+[2023-01-02 14:10:31] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 58536 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i51#cba0bw4d (iteration 51)
+[2023-01-02 14:10:31] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 58536 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i52#cba0bx4d (iteration 52)
+[2023-01-02 14:10:31] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 74482 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i53#cba0bw4d (iteration 53)
+[2023-01-02 14:10:31] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 74482 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i54#cba0bx4d (iteration 54)
+[2023-01-02 14:10:31] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 75951 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i55#cba0bw4d (iteration 55)
+[2023-01-02 14:10:31] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 75951 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i56#cba0bx4d (iteration 56)
+[2023-01-02 14:10:31] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 61161 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i57#cba0bw4d (iteration 57)
+[2023-01-02 14:10:31] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 61161 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i58#cba0bx4d (iteration 58)
+[2023-01-02 14:10:31] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 59741 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i59#cba0bw4d (iteration 59)
+[2023-01-02 14:10:31] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 59741 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i60#cba0bx4d (iteration 60)
+[2023-01-02 14:10:31] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 56261 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i61#cba0bw4d (iteration 61)
+[2023-01-02 14:10:31] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 56261 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i62#cba0bx4d (iteration 62)
+[2023-01-02 14:10:31] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 54199 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i63#cba0bw4d (iteration 63)
+[2023-01-02 14:10:31] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 54199 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i64#cba0bx4d (iteration 64)
+[2023-01-02 14:10:31] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 53411 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i65#cba0bw4d (iteration 65)
+[2023-01-02 14:10:31] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 53411 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i66#cba0bx4d (iteration 66)
+[2023-01-02 14:10:31] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 49280 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i67#cba0bw4d (iteration 67)
+[2023-01-02 14:10:31] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 49280 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i68#cba0bx4d (iteration 68)
+[2023-01-02 14:10:31] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 41182 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i69#cba0bw4d (iteration 69)
+[2023-01-02 14:10:31] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 41182 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i70#cba0bx4d (iteration 70)
+[2023-01-02 14:10:31] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 31601 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i71#cba0bw4d (iteration 71)
+[2023-01-02 14:10:31] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 31601 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i72#cba0bx4d (iteration 72)
+[2023-01-02 14:10:31] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 26437 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i73#cba0bw4d (iteration 73)
+[2023-01-02 14:10:31] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 26437 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i74#cba0bx4d (iteration 74)
+[2023-01-02 14:10:31] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 21262 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:31] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i75#cba0bw4d (iteration 75)
+[2023-01-02 14:10:31] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 21262 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i76#cba0bx4d (iteration 76)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 17398 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i77#cba0bw4d (iteration 77)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 17398 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i78#cba0bx4d (iteration 78)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 13802 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i79#cba0bw4d (iteration 79)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 13802 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i80#cba0bx4d (iteration 80)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 11481 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i81#cba0bw4d (iteration 81)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 11481 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i82#cba0bx4d (iteration 82)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 9051 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i83#cba0bw4d (iteration 83)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 9051 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i84#cba0bx4d (iteration 84)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 6957 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i85#cba0bw4d (iteration 85)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 6957 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i86#cba0bx4d (iteration 86)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 5288 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i87#cba0bw4d (iteration 87)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 5288 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i88#cba0bx4d (iteration 88)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 3992 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i89#cba0bw4d (iteration 89)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 3992 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i90#cba0bx4d (iteration 90)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 2888 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i91#cba0bw4d (iteration 91)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 2888 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i92#cba0bx4d (iteration 92)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 1966 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i93#cba0bw4d (iteration 93)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 1966 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i94#cba0bx4d (iteration 94)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 1511 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i95#cba0bw4d (iteration 95)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 1511 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i96#cba0bx4d (iteration 96)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 1256 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i97#cba0bw4d (iteration 97)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 1256 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i98#cba0bx4d (iteration 98)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 1029 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i99#cba0bw4d (iteration 99)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 1029 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i100#cba0bx4d (iteration 100)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 750 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i101#cba0bw4d (iteration 101)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 750 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i102#cba0bx4d (iteration 102)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 622 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i103#cba0bw4d (iteration 103)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 622 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i104#cba0bx4d (iteration 104)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 423 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i105#cba0bw4d (iteration 105)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 423 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i106#cba0bx4d (iteration 106)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 335 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i107#cba0bw4d (iteration 107)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 335 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i108#cba0bx4d (iteration 108)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 277 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i109#cba0bw4d (iteration 109)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 277 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i110#cba0bx4d (iteration 110)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 230 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i111#cba0bw4d (iteration 111)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 230 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i112#cba0bx4d (iteration 112)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 166 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i113#cba0bw4d (iteration 113)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 166 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i114#cba0bx4d (iteration 114)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 122 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i115#cba0bw4d (iteration 115)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 122 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i116#cba0bx4d (iteration 116)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 77 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i117#cba0bw4d (iteration 117)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 77 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i118#cba0bx4d (iteration 118)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 46 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i119#cba0bw4d (iteration 119)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 46 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i120#cba0bx4d (iteration 120)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 21 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i121#cba0bw4d (iteration 121)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 21 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i122#cba0bx4d (iteration 122)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 22 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i123#cba0bw4d (iteration 123)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 22 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i124#cba0bx4d (iteration 124)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 20 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i125#cba0bw4d (iteration 125)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 20 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i126#cba0bx4d (iteration 126)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 8 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i127#cba0bw4d (iteration 127)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 8 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i128#cba0bx4d (iteration 128)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 5 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i129#cba0bw4d (iteration 129)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 5 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i130#cba0bx4d (iteration 130)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 4 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i131#cba0bw4d (iteration 131)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 4 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i132#cba0bx4d (iteration 132)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 6 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i133#cba0bw4d (iteration 133)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 6 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i134#cba0bx4d (iteration 134)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 3 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i135#cba0bw4d (iteration 135)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 3 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i136#cba0bx4d (iteration 136)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 1 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i137#cba0bw4d (iteration 137)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 1 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i138#cba0bx4d (iteration 138)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 2 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i139#cba0bw4d (iteration 139)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 2 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i140#cba0bx4d (iteration 140)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 2 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i141#cba0bw4d (iteration 141)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 2 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i142#cba0bx4d (iteration 142)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#ff_delta has 1 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@i143#cba0bw4d (iteration 143)
+[2023-01-02 14:10:32] (4s) 			 - AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta has 1 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate AST#4fc16b88::AstNode::getTopLevel#ff/2@i144#cba0bx4d (iteration 144)
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Empty delta for AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:32] (4s) Accumulating deltas
+[2023-01-02 14:10:32] (4s)  >>> Created relation AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@cba0bw4d with 1538661 rows.
+[2023-01-02 14:10:32] (4s)  >>> Created relation AST#4fc16b88::AstNode::getTopLevel#ff/2@cba0bx4d with 1538543 rows.
+[2023-01-02 14:10:32] (4s) No need to promote strings for predicate AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff  as it does not contain computed strings.
+[2023-01-02 14:10:32] (4s)  >>> Created relation AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff/2@15b6f2d2 with 1538661 rows.
+[2023-01-02 14:10:32] (4s) No need to promote strings for predicate AST#4fc16b88::AstNode::getParent#0#dispred#ff  as it does not contain computed strings.
+[2023-01-02 14:10:32] (4s)  >>> Created relation AST#4fc16b88::AstNode::getParent#0#dispred#ff/2@751c2en4 with 1538543 rows.
+[2023-01-02 14:10:32] (4s) Starting to evaluate predicate exprs_2#antijoin_rhs/1@47705ap5
+[2023-01-02 14:10:32] (5s)  >>> Created relation exprs_2#antijoin_rhs/1@47705ap5 with 907347 rows.
+[2023-01-02 14:10:32] (5s) Starting to evaluate predicate _exprs_20#count_range#join_rhs/2@9dd5e91k
+[2023-01-02 14:10:32] (5s)  >>> Created relation _exprs_20#count_range#join_rhs/2@9dd5e91k with 693630 rows.
+[2023-01-02 14:10:32] (5s) Starting to evaluate predicate AST#4fc16b88::AstNode::getNumChildExpr#0#dispred#bf/2@145da0vq
+[2023-01-02 14:10:32] (5s)  >>> Created relation AST#4fc16b88::AstNode::getNumChildExpr#0#dispred#bf/2@145da0vq with 789 rows.
+[2023-01-02 14:10:32] (5s) Starting to evaluate predicate Templates#61f4d5ba::TemplateLiteral::getElement#1#dispred#fbf#cpe#13/2@6ba17drj
+[2023-01-02 14:10:32] (5s)  >>> Created relation Templates#61f4d5ba::TemplateLiteral::getElement#1#dispred#fbf#cpe#13/2@6ba17drj with 766 rows.
+[2023-01-02 14:10:32] (5s) Starting to evaluate predicate _AST#4fc16b88::AstNode::getNumChildExpr#0#dispred#bf_Templates#61f4d5ba::TemplateLiteral::getElement__#join_rhs/2@3eb77dbm
+[2023-01-02 14:10:32] (5s)  >>> Created relation _AST#4fc16b88::AstNode::getNumChildExpr#0#dispred#bf_Templates#61f4d5ba::TemplateLiteral::getElement__#join_rhs/2@3eb77dbm with 551 rows.
+[2023-01-02 14:10:32] (5s) Starting to evaluate predicate Templates#61f4d5ba::TemplateLiteral::getElement#1#dispred#fbf#cpe#13_10#join_rhs/2@5dc99eqa
+[2023-01-02 14:10:32] (5s)  >>> Created relation Templates#61f4d5ba::TemplateLiteral::getElement#1#dispred#fbf#cpe#13_10#join_rhs/2@5dc99eqa with 766 rows.
+[2023-01-02 14:10:33] (5s)  >>> Created relation literals/3@40f5a52j with 766487 rows.
+[2023-01-02 14:10:33] (5s) Starting to evaluate predicate literals_201#join_rhs/3@ee0c9021
+[2023-01-02 14:10:33] (6s)  >>> Created relation literals_201#join_rhs/3@ee0c9021 with 766487 rows.
+[2023-01-02 14:10:33] (6s) Starting to evaluate predicate literals_20#join_rhs/2@7fc91843
+[2023-01-02 14:10:33] (6s)  >>> Created relation literals_20#join_rhs/2@7fc91843 with 766487 rows.
+[2023-01-02 14:10:33] (6s) Starting to evaluate predicate Expr#92cb915f::Identifier#f/1@0121d3km
+[2023-01-02 14:10:33] (6s)  >>> Created relation Expr#92cb915f::Identifier#f/1@0121d3km with 550333 rows.
+[2023-01-02 14:10:33] (6s) Starting to evaluate predicate AST#4fc16b88::AstNode::getNumChildExpr#0#dispred#bf_10#join_rhs/2@305336d6
+[2023-01-02 14:10:33] (6s)  >>> Created relation AST#4fc16b88::AstNode::getNumChildExpr#0#dispred#bf_10#join_rhs/2@305336d6 with 789 rows.
+[2023-01-02 14:10:33] (6s)  >>> Created relation has_declare_keyword/1@b0e5c38m with 0 rows.
+[2023-01-02 14:10:33] (6s)  >>> Created relation has_type_keyword/1@fe5af2s0 with 0 rows.
+[2023-01-02 14:10:33] (6s) Starting to evaluate predicate AST#4fc16b88::AstNode::getChild#1#dispred#fff_120#join_rhs/3@cd5dcb5g
+[2023-01-02 14:10:34] (6s)  >>> Created relation AST#4fc16b88::AstNode::getChild#1#dispred#fff_120#join_rhs/3@cd5dcb5g with 1538543 rows.
+[2023-01-02 14:10:34] (6s) Starting to evaluate predicate AST#4fc16b88::ExprOrStmt#f/1@1d292b20
+[2023-01-02 14:10:34] (6s)  >>> Created relation AST#4fc16b88::ExprOrStmt#f/1@1d292b20 with 1514177 rows.
+[2023-01-02 14:10:34] (6s) Starting to evaluate predicate _@function#f_AST#4fc16b88::AstNode::getChild#1#dispred#fff_AST#4fc16b88::ExprOrStmt#f#antijoin_rhs/1@2d904drj
+[2023-01-02 14:10:34] (6s)  >>> Created relation _@function#f_AST#4fc16b88::AstNode::getChild#1#dispred#fff_AST#4fc16b88::ExprOrStmt#f#antijoin_rhs/1@2d904drj with 26193 rows.
+[2023-01-02 14:10:34] (6s) Starting to evaluate predicate _@function#f_AST#4fc16b88::AstNode::getChild#1#dispred#fff_120#join_rhs__@function#f_AST#4fc16b88::A__#shared/1@11599562
+[2023-01-02 14:10:34] (6s)  >>> Created relation _@function#f_AST#4fc16b88::AstNode::getChild#1#dispred#fff_120#join_rhs__@function#f_AST#4fc16b88::A__#shared/1@11599562 with 0 rows.
+[2023-01-02 14:10:34] (6s) Starting to evaluate predicate Expr#92cb915f::Identifier::getName#ff/2@4bcd21l5
+[2023-01-02 14:10:34] (6s)  >>> Created relation Expr#92cb915f::Identifier::getName#ff/2@4bcd21l5 with 550333 rows.
+[2023-01-02 14:10:34] (6s) Starting to evaluate predicate Variables#51c25ee5::VarRef::getName#0#dispred#ff/2@aec67bem
+[2023-01-02 14:10:34] (6s)  >>> Created relation Variables#51c25ee5::VarRef::getName#0#dispred#ff/2@aec67bem with 392337 rows.
+[2023-01-02 14:10:34] (6s) Starting to evaluate predicate Expr#92cb915f::Identifier::getName#0#dispred#ff/2@82d1747v
+[2023-01-02 14:10:34] (6s)  >>> Created relation Expr#92cb915f::Identifier::getName#0#dispred#ff/2@82d1747v with 550333 rows.
+[2023-01-02 14:10:34] (6s) No need to promote strings for predicate Expr#92cb915f::Identifier::getName#0#dispred#ff  as it does not contain computed strings.
+[2023-01-02 14:10:34] (6s)  >>> Created relation Expr#92cb915f::Identifier::getName#0#dispred#ff/2@527d8d81 with 550333 rows.
+[2023-01-02 14:10:34] (6s) Starting to evaluate predicate _exprs_10#join_rhs_exprs_230#join_rhs#join_rhs#1/2@7a393dah
+[2023-01-02 14:10:34] (6s)  >>> Created relation _exprs_10#join_rhs_exprs_230#join_rhs#join_rhs#1/2@7a393dah with 8650 rows.
+[2023-01-02 14:10:34] (6s) Starting to evaluate predicate Expr#92cb915f::BinaryExpr#f/1@ac97772s
+[2023-01-02 14:10:34] (6s)  >>> Created relation Expr#92cb915f::BinaryExpr#f/1@ac97772s with 114039 rows.
+[2023-01-02 14:10:34] (6s) Starting to evaluate predicate _Expr#92cb915f::BinaryExpr#f_exprs_230#join_rhs#join_rhs/2@01dfa39a
+[2023-01-02 14:10:34] (7s)  >>> Created relation _Expr#92cb915f::BinaryExpr#f_exprs_230#join_rhs#join_rhs/2@01dfa39a with 114039 rows.
+[2023-01-02 14:10:34] (7s) Starting to evaluate predicate Constants#db6547f3::SyntacticConstants::PrimitiveLiteralConstant#f/1@c47305tt
+[2023-01-02 14:10:34] (7s)  >>> Created relation Constants#db6547f3::SyntacticConstants::PrimitiveLiteralConstant#f/1@c47305tt with 208991 rows.
+[2023-01-02 14:10:34] (7s) Starting to evaluate predicate Constants#db6547f3::SyntacticConstants::NullConstant#f/1@3847b4cr
+[2023-01-02 14:10:34] (7s)  >>> Created relation Constants#db6547f3::SyntacticConstants::NullConstant#f/1@3847b4cr with 5804 rows.
+[2023-01-02 14:10:34] (7s) Starting to evaluate predicate Expr#92cb915f::UnaryExpr#f/1@d7868b2u
+[2023-01-02 14:10:34] (7s)  >>> Created relation Expr#92cb915f::UnaryExpr#f/1@d7868b2u with 35065 rows.
+[2023-01-02 14:10:34] (7s) No need to promote strings for predicate Constants#db6547f3::SyntacticConstants::NullConstant#f  as it does not contain computed strings.
+[2023-01-02 14:10:34] (7s)  >>> Created relation Constants#db6547f3::SyntacticConstants::NullConstant#f/1@e04be5br with 5804 rows.
+[2023-01-02 14:10:34] (7s) No need to promote strings for predicate Constants#db6547f3::SyntacticConstants::PrimitiveLiteralConstant#f  as it does not contain computed strings.
+[2023-01-02 14:10:34] (7s)  >>> Created relation Constants#db6547f3::SyntacticConstants::PrimitiveLiteralConstant#f/1@4a8e20m0 with 208991 rows.
+[2023-01-02 14:10:34] (7s)  >>> Created relation jsdoc/3@0eb1965q with 9269 rows.
+[2023-01-02 14:10:34] (7s)  >>> Created relation next_token/2@5cc8eegn with 13166 rows.
+[2023-01-02 14:10:34] (7s)  >>> Created relation tokeninfo/5@29a3f7c6 with 2039910 rows.
+[2023-01-02 14:10:34] (7s)  >>> Created relation locations_default/6@8c8d0fsu with 2925821 rows.
+[2023-01-02 14:10:34] (7s) Starting to evaluate predicate locations_default_1230#join_rhs/4@5f10cemo
+[2023-01-02 14:10:35] (8s)  >>> Created relation locations_default_1230#join_rhs/4@5f10cemo with 2925821 rows.
+[2023-01-02 14:10:35] (8s)  >>> Created relation hasLocation/2@b3afe5l6 with 3837957 rows.
+[2023-01-02 14:10:35] (8s) Starting to evaluate predicate AST#4fc16b88::AstNode#f/1@927c25j9
+[2023-01-02 14:10:35] (8s)  >>> Created relation AST#4fc16b88::AstNode#f/1@927c25j9 with 1538661 rows.
+[2023-01-02 14:10:35] (8s) Starting to evaluate predicate AST#4fc16b88::AstNode::getLocation#0#dispred#ff/2@ee3a6cbr
+[2023-01-02 14:10:35] (8s)  >>> Created relation AST#4fc16b88::AstNode::getLocation#0#dispred#ff/2@ee3a6cbr with 1538661 rows.
+[2023-01-02 14:10:35] (8s) Starting to evaluate predicate AST#4fc16b88::AstNode::getLocation#0#dispred#ff_10#join_rhs/2@74ac91cf
+[2023-01-02 14:10:36] (8s)  >>> Created relation AST#4fc16b88::AstNode::getLocation#0#dispred#ff_10#join_rhs/2@74ac91cf with 1538661 rows.
+[2023-01-02 14:10:36] (8s) Starting to evaluate predicate AST#4fc16b88::AstNode::getFirstToken#fb/2@1e8852db
+[2023-01-02 14:10:37] (10s)  >>> Created relation AST#4fc16b88::AstNode::getFirstToken#fb/2@1e8852db with 1538549 rows.
+[2023-01-02 14:10:37] (10s) Starting to evaluate predicate tokeninfo_230#join_rhs/3@8df34cs4
+[2023-01-02 14:10:37] (10s)  >>> Created relation tokeninfo_230#join_rhs/3@8df34cs4 with 2039910 rows.
+[2023-01-02 14:10:37] (10s) Starting to evaluate predicate Tokens#f94b5384::Token::getPreviousToken#0#dispred#fb/2@4eb9a2d8
+[2023-01-02 14:10:37] (10s)  >>> Created relation Tokens#f94b5384::Token::getPreviousToken#0#dispred#fb/2@4eb9a2d8 with 2039792 rows.
+[2023-01-02 14:10:37] (10s) Starting to evaluate predicate xUnit#5c59608b::IndexExprIndexIsBracketedListOfExpressions#f/1@d3567f26
+[2023-01-02 14:10:37] (10s)  >>> Created relation xUnit#5c59608b::IndexExprIndexIsBracketedListOfExpressions#f/1@d3567f26 with 1691 rows.
+[2023-01-02 14:10:37] (10s) Starting to evaluate predicate AST#4fc16b88::AstNode::getFirstToken#0#dispred#fb/2@9e0989gl
+[2023-01-02 14:10:38] (10s)  >>> Created relation AST#4fc16b88::AstNode::getFirstToken#0#dispred#fb/2@9e0989gl with 1538549 rows.
+[2023-01-02 14:10:38] (10s) Starting to evaluate predicate AST#4fc16b88::AstNode::getFirstToken#0#dispred#fb_10#join_rhs/2@e721eaqb
+[2023-01-02 14:10:38] (10s)  >>> Created relation AST#4fc16b88::AstNode::getFirstToken#0#dispred#fb_10#join_rhs/2@e721eaqb with 1538549 rows.
+[2023-01-02 14:10:38] (10s) Starting to evaluate predicate _AST#4fc16b88::AstNode::getFirstToken#0#dispred#fb_10#join_rhs_jsdoc_next_token#shared/2@c45aa1mh
+[2023-01-02 14:10:38] (10s)  >>> Created relation _AST#4fc16b88::AstNode::getFirstToken#0#dispred#fb_10#join_rhs_jsdoc_next_token#shared/2@c45aa1mh with 36158 rows.
+[2023-01-02 14:10:38] (10s) Starting to evaluate predicate Classes#724eccfc::ClassOrInterface#f/1@0c418c7b
+[2023-01-02 14:10:38] (10s)  >>> Created relation Classes#724eccfc::ClassOrInterface#f/1@0c418c7b with 40 rows.
+[2023-01-02 14:10:38] (10s) Starting to evaluate predicate Classes#724eccfc::MemberDeclaration#f/1@78f451a9
+[2023-01-02 14:10:38] (10s)  >>> Created relation Classes#724eccfc::MemberDeclaration#f/1@78f451a9 with 279 rows.
+[2023-01-02 14:10:38] (10s) Starting to evaluate predicate Expr#92cb915f::Property#f/1@f8f2b4id
+[2023-01-02 14:10:38] (10s)  >>> Created relation Expr#92cb915f::Property#f/1@f8f2b4id with 23145 rows.
+[2023-01-02 14:10:38] (10s) Starting to evaluate predicate JSDoc#aa37b89c::Documentable#class#f/1@8de56f8v
+[2023-01-02 14:10:38] (10s)  >>> Created relation JSDoc#aa37b89c::Documentable#class#f/1@8de56f8v with 178609 rows.
+[2023-01-02 14:10:38] (10s)  >>> Created relation files/2@bfcf0c84 with 119 rows.
+[2023-01-02 14:10:38] (10s) Starting to evaluate predicate Files#c96bb86e::Container::getBaseName#0#dispred#ff/2@259d82oj
+[2023-01-02 14:10:38] (11s)  >>> Created relation Files#c96bb86e::Container::getBaseName#0#dispred#ff/2@259d82oj with 119 rows.
+[2023-01-02 14:10:38] (11s) Starting to evaluate predicate AST#4fc16b88::isAmbientTopLevel#1#f/1@e3a0ad12
+[2023-01-02 14:10:38] (11s)  >>> Created relation AST#4fc16b88::isAmbientTopLevel#1#f/1@e3a0ad12 with 0 rows.
+[2023-01-02 14:10:38] (11s) Inferred that _AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_AST#4fc16b88::isAmbientTopLevel#1#f__@function#f_AS__#antijoin_rhs/1@d1d591vq is empty, due to AST#4fc16b88::isAmbientTopLevel#1#f/1@e3a0ad12.
+[2023-01-02 14:10:38] (11s) Inferred that AST#4fc16b88::isAmbientTopLevel#1#f/1@c5bb23ui is empty, due to AST#4fc16b88::isAmbientTopLevel#1#f/1@e3a0ad12.
+[2023-01-02 14:10:38] (11s)  >>> Created relation _AST#4fc16b88::AstNode::getTopLevel#0#dispred#ff_AST#4fc16b88::isAmbientTopLevel#1#f__@function#f_AS__#antijoin_rhs/1@d1d591vq with 0 rows.
+[2023-01-02 14:10:38] (11s)  >>> Created relation AST#4fc16b88::isAmbientTopLevel#1#f/1@c5bb23ui with 0 rows.
+[2023-01-02 14:10:38] (11s) Starting to evaluate predicate AST#4fc16b88::AstNode::isAmbientInternal#f/1@i1#021ed03m (iteration 1)
+[2023-01-02 14:10:38] (11s) Empty delta for AST#4fc16b88::AstNode::isAmbientInternal#f_delta (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:38] (11s) Accumulating deltas
+[2023-01-02 14:10:38] (11s)  >>> Created relation AST#4fc16b88::AstNode::isAmbientInternal#f/1@021ed03m with 0 rows.
+[2023-01-02 14:10:38] (11s) Inferred that AST#4fc16b88::AstNode::isAmbientInternal#0#dispred#f/1@341f48h0 is empty, due to AST#4fc16b88::AstNode::isAmbientInternal#f/1@021ed03m.
+[2023-01-02 14:10:38] (11s) Inferred that AST#4fc16b88::AstNode::isAmbientInternal#0#dispred#f/1@c67afebl is empty, due to AST#4fc16b88::AstNode::isAmbientInternal#0#dispred#f/1@341f48h0.
+[2023-01-02 14:10:38] (11s)  >>> Created relation AST#4fc16b88::AstNode::isAmbientInternal#0#dispred#f/1@c67afebl with 0 rows.
+[2023-01-02 14:10:38] (11s)  >>> Created relation AST#4fc16b88::AstNode::isAmbientInternal#0#dispred#f/1@341f48h0 with 0 rows.
+[2023-01-02 14:10:38] (11s) Starting to evaluate predicate exprs_203#join_rhs/3@7db141fd
+[2023-01-02 14:10:38] (11s)  >>> Created relation exprs_203#join_rhs/3@7db141fd with 1384699 rows.
+[2023-01-02 14:10:38] (11s) Starting to evaluate predicate Expr#92cb915f::SeqExpr::getOperand#1#dispred#fff/3@5ae0a8an
+[2023-01-02 14:10:38] (11s)  >>> Created relation Expr#92cb915f::SeqExpr::getOperand#1#dispred#fff/3@5ae0a8an with 59717 rows.
+[2023-01-02 14:10:38] (11s) Starting to evaluate predicate project#Expr#92cb915f::SeqExpr::getOperand#1#dispred#fff/1@21ff6aab
+[2023-01-02 14:10:38] (11s)  >>> Created relation project#Expr#92cb915f::SeqExpr::getOperand#1#dispred#fff/1@21ff6aab with 16968 rows.
+[2023-01-02 14:10:38] (11s) Starting to evaluate predicate Expr#92cb915f::SeqExpr::getOperand#1#dispred#fff_02#count_range/2@98d1db67
+[2023-01-02 14:10:38] (11s)  >>> Created relation Expr#92cb915f::SeqExpr::getOperand#1#dispred#fff_02#count_range/2@98d1db67 with 59717 rows.
+[2023-01-02 14:10:38] (11s) Starting to evaluate predicate _Expr#92cb915f::SeqExpr::getOperand#1#dispred#fff_02#count_range#join_rhs/2@858b3drl
+[2023-01-02 14:10:38] (11s)  >>> Created relation _Expr#92cb915f::SeqExpr::getOperand#1#dispred#fff_02#count_range#join_rhs/2@858b3drl with 16968 rows.
+[2023-01-02 14:10:38] (11s) Starting to evaluate predicate Expr#92cb915f::SeqExpr::getNumOperands#0#dispred#ff/2@55f139v5
+[2023-01-02 14:10:38] (11s)  >>> Created relation Expr#92cb915f::SeqExpr::getNumOperands#0#dispred#ff/2@55f139v5 with 16968 rows.
+[2023-01-02 14:10:38] (11s) Starting to evaluate predicate Expr#92cb915f::SeqExpr::getLastOperand#0#dispred#ff/2@d725e6p5
+[2023-01-02 14:10:38] (11s)  >>> Created relation Expr#92cb915f::SeqExpr::getLastOperand#0#dispred#ff/2@d725e6p5 with 16968 rows.
+[2023-01-02 14:10:38] (11s) Starting to evaluate predicate Expr#92cb915f::SeqExpr::getLastOperand#0#dispred#ff_10#join_rhs/2@41523529
+[2023-01-02 14:10:38] (11s)  >>> Created relation Expr#92cb915f::SeqExpr::getLastOperand#0#dispred#ff_10#join_rhs/2@41523529 with 16968 rows.
+[2023-01-02 14:10:38] (11s) Starting to evaluate predicate Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff/2@i1#6d4cbb12 (iteration 1)
+[2023-01-02 14:10:38] (11s) 			 - Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff_delta has 1292425 rows (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:38] (11s) Starting to evaluate predicate Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff/2@i2#6d4cbb12 (iteration 2)
+[2023-01-02 14:10:38] (11s) 			 - Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff_delta has 73432 rows (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:38] (11s) Starting to evaluate predicate Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff/2@i3#6d4cbb12 (iteration 3)
+[2023-01-02 14:10:38] (11s) 			 - Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff_delta has 16889 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:38] (11s) Starting to evaluate predicate Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff/2@i4#6d4cbb12 (iteration 4)
+[2023-01-02 14:10:38] (11s) 			 - Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff_delta has 1563 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:38] (11s) Starting to evaluate predicate Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff/2@i5#6d4cbb12 (iteration 5)
+[2023-01-02 14:10:38] (11s) 			 - Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff_delta has 102 rows (order for disjuncts: delta=3163).
+[2023-01-02 14:10:38] (11s) Starting to evaluate predicate Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff/2@i6#6d4cbb12 (iteration 6)
+[2023-01-02 14:10:38] (11s) 			 - Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff_delta has 44 rows (order for disjuncts: delta=317).
+[2023-01-02 14:10:38] (11s) Starting to evaluate predicate Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff/2@i7#6d4cbb12 (iteration 7)
+[2023-01-02 14:10:38] (11s) 			 - Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff_delta has 38 rows (order for disjuncts: delta=317).
+[2023-01-02 14:10:38] (11s) Starting to evaluate predicate Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff/2@i8#6d4cbb12 (iteration 8)
+[2023-01-02 14:10:38] (11s) 			 - Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff_delta has 32 rows (order for disjuncts: delta=317).
+[2023-01-02 14:10:38] (11s) Starting to evaluate predicate Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff/2@i9#6d4cbb12 (iteration 9)
+[2023-01-02 14:10:38] (11s) 			 - Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff_delta has 27 rows (order for disjuncts: delta=317).
+[2023-01-02 14:10:38] (11s) Starting to evaluate predicate Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff/2@i10#6d4cbb12 (iteration 10)
+[2023-01-02 14:10:38] (11s) 			 - Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff_delta has 25 rows (order for disjuncts: delta=317).
+[2023-01-02 14:10:38] (11s) Starting to evaluate predicate Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff/2@i11#6d4cbb12 (iteration 11)
+[2023-01-02 14:10:38] (11s) 			 - Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff_delta has 20 rows (order for disjuncts: delta=317).
+[2023-01-02 14:10:38] (11s) Starting to evaluate predicate Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff/2@i12#6d4cbb12 (iteration 12)
+[2023-01-02 14:10:38] (11s) 			 - Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff_delta has 15 rows (order for disjuncts: delta=317).
+[2023-01-02 14:10:38] (11s) Starting to evaluate predicate Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff/2@i13#6d4cbb12 (iteration 13)
+[2023-01-02 14:10:38] (11s) 			 - Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff_delta has 15 rows (order for disjuncts: delta=317).
+[2023-01-02 14:10:38] (11s) Starting to evaluate predicate Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff/2@i14#6d4cbb12 (iteration 14)
+[2023-01-02 14:10:38] (11s) 			 - Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff_delta has 14 rows (order for disjuncts: delta=317).
+[2023-01-02 14:10:38] (11s) Starting to evaluate predicate Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff/2@i15#6d4cbb12 (iteration 15)
+[2023-01-02 14:10:38] (11s) 			 - Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff_delta has 12 rows (order for disjuncts: delta=317).
+[2023-01-02 14:10:38] (11s) Starting to evaluate predicate Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff/2@i16#6d4cbb12 (iteration 16)
+[2023-01-02 14:10:38] (11s) 			 - Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff_delta has 11 rows (order for disjuncts: delta=317).
+[2023-01-02 14:10:38] (11s) Starting to evaluate predicate Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff/2@i17#6d4cbb12 (iteration 17)
+[2023-01-02 14:10:38] (11s) 			 - Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff_delta has 10 rows (order for disjuncts: delta=317).
+[2023-01-02 14:10:38] (11s) Starting to evaluate predicate Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff/2@i18#6d4cbb12 (iteration 18)
+[2023-01-02 14:10:38] (11s) 			 - Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff_delta has 6 rows (order for disjuncts: delta=317).
+[2023-01-02 14:10:38] (11s) Starting to evaluate predicate Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff/2@i19#6d4cbb12 (iteration 19)
+[2023-01-02 14:10:38] (11s) 			 - Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff_delta has 4 rows (order for disjuncts: delta=317).
+[2023-01-02 14:10:38] (11s) Starting to evaluate predicate Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff/2@i20#6d4cbb12 (iteration 20)
+[2023-01-02 14:10:38] (11s) 			 - Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff_delta has 3 rows (order for disjuncts: delta=317).
+[2023-01-02 14:10:38] (11s) Starting to evaluate predicate Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff/2@i21#6d4cbb12 (iteration 21)
+[2023-01-02 14:10:38] (11s) 			 - Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff_delta has 2 rows (order for disjuncts: delta=317).
+[2023-01-02 14:10:38] (11s) Starting to evaluate predicate Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff/2@i22#6d4cbb12 (iteration 22)
+[2023-01-02 14:10:38] (11s) 			 - Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff_delta has 2 rows (order for disjuncts: delta=317).
+[2023-01-02 14:10:38] (11s) Starting to evaluate predicate Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff/2@i23#6d4cbb12 (iteration 23)
+[2023-01-02 14:10:38] (11s) 			 - Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff_delta has 2 rows (order for disjuncts: delta=317).
+[2023-01-02 14:10:38] (11s) Starting to evaluate predicate Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff/2@i24#6d4cbb12 (iteration 24)
+[2023-01-02 14:10:38] (11s) 			 - Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff_delta has 2 rows (order for disjuncts: delta=317).
+[2023-01-02 14:10:38] (11s) Starting to evaluate predicate Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff/2@i25#6d4cbb12 (iteration 25)
+[2023-01-02 14:10:38] (11s) 			 - Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff_delta has 1 rows (order for disjuncts: delta=317).
+[2023-01-02 14:10:38] (11s) Starting to evaluate predicate Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff/2@i26#6d4cbb12 (iteration 26)
+[2023-01-02 14:10:38] (11s) 			 - Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff_delta has 1 rows (order for disjuncts: delta=317).
+[2023-01-02 14:10:38] (11s) Starting to evaluate predicate Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff/2@i27#6d4cbb12 (iteration 27)
+[2023-01-02 14:10:38] (11s) 			 - Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff_delta has 1 rows (order for disjuncts: delta=317).
+[2023-01-02 14:10:38] (11s) Starting to evaluate predicate Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff/2@i28#6d4cbb12 (iteration 28)
+[2023-01-02 14:10:38] (11s) 			 - Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff_delta has 1 rows (order for disjuncts: delta=317).
+[2023-01-02 14:10:38] (11s) Starting to evaluate predicate Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff/2@i29#6d4cbb12 (iteration 29)
+[2023-01-02 14:10:38] (11s) Empty delta for Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff_delta (order for disjuncts: delta=317).
+[2023-01-02 14:10:38] (11s) Accumulating deltas
+[2023-01-02 14:10:38] (11s)  >>> Created relation Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff/2@6d4cbb12 with 1384699 rows.
+[2023-01-02 14:10:38] (11s) Starting to evaluate predicate Expr#92cb915f::ExprOrType::getOwnDocumentation#0#dispred#ff/2@982588e1
+[2023-01-02 14:10:38] (11s)  >>> Created relation Expr#92cb915f::ExprOrType::getOwnDocumentation#0#dispred#ff/2@982588e1 with 30003 rows.
+[2023-01-02 14:10:38] (11s) Starting to evaluate predicate project#Expr#92cb915f::ExprOrType::getOwnDocumentation#0#dispred#ff/1@9554441k
+[2023-01-02 14:10:38] (11s)  >>> Created relation project#Expr#92cb915f::ExprOrType::getOwnDocumentation#0#dispred#ff/1@9554441k with 29884 rows.
+[2023-01-02 14:10:38] (11s) Starting to evaluate predicate _Expr#92cb915f::ExprOrType#f_project#Expr#92cb915f::ExprOrType::getOwnDocumentation#0#dispred#ff#shared/1@35f0dfol
+[2023-01-02 14:10:39] (11s)  >>> Created relation _Expr#92cb915f::ExprOrType#f_project#Expr#92cb915f::ExprOrType::getOwnDocumentation#0#dispred#ff#shared/1@35f0dfol with 1354815 rows.
+[2023-01-02 14:10:39] (11s)  >>> Created relation is_method/1@6213be0o with 471 rows.
+[2023-01-02 14:10:39] (11s) Starting to evaluate predicate _AST#4fc16b88::AstNode::getParent#0#dispred#ff_Classes#724eccfc::MemberDeclaration#f_Expr#92cb915f::__#join_rhs/2@594565ji
+[2023-01-02 14:10:39] (11s)  >>> Created relation _AST#4fc16b88::AstNode::getParent#0#dispred#ff_Classes#724eccfc::MemberDeclaration#f_Expr#92cb915f::__#join_rhs/2@594565ji with 553 rows.
+[2023-01-02 14:10:39] (11s) Starting to evaluate predicate _AST#4fc16b88::AstNode::getParent#0#dispred#ff__Expr#92cb915f::ExprOrType#f_project#Expr#92cb915f::E__#join_rhs/2@6f9a8288
+[2023-01-02 14:10:39] (12s)  >>> Created relation _AST#4fc16b88::AstNode::getParent#0#dispred#ff__Expr#92cb915f::ExprOrType#f_project#Expr#92cb915f::E__#join_rhs/2@6f9a8288 with 68134 rows.
+[2023-01-02 14:10:39] (12s) Starting to evaluate predicate _AST#4fc16b88::AstNode::getParent#0#dispred#ff_Expr#92cb915f::Property#f__Expr#92cb915f::ExprOrType#__#join_rhs/2@d30dad5u
+[2023-01-02 14:10:39] (12s)  >>> Created relation _AST#4fc16b88::AstNode::getParent#0#dispred#ff_Expr#92cb915f::Property#f__Expr#92cb915f::ExprOrType#__#join_rhs/2@d30dad5u with 46283 rows.
+[2023-01-02 14:10:39] (12s) Starting to evaluate predicate _Expr#92cb915f::Assignment::getRhs#0#dispred#ff_10#join_rhs__Expr#92cb915f::ExprOrType#f_project#Exp__#join_rhs/2@bf96c7qd
+[2023-01-02 14:10:39] (12s)  >>> Created relation _Expr#92cb915f::Assignment::getRhs#0#dispred#ff_10#join_rhs__Expr#92cb915f::ExprOrType#f_project#Exp__#join_rhs/2@bf96c7qd with 50104 rows.
+[2023-01-02 14:10:39] (12s) Starting to evaluate predicate Expr#92cb915f::DotExpr::getProperty#0#dispred#ff/2@d4e893j8
+[2023-01-02 14:10:39] (12s)  >>> Created relation Expr#92cb915f::DotExpr::getProperty#0#dispred#ff/2@d4e893j8 with 136817 rows.
+[2023-01-02 14:10:39] (12s) Starting to evaluate predicate Expr#92cb915f::DotExpr::getProperty#0#dispred#ff_10#join_rhs/2@5b5e2dc2
+[2023-01-02 14:10:39] (12s)  >>> Created relation Expr#92cb915f::DotExpr::getProperty#0#dispred#ff_10#join_rhs/2@5b5e2dc2 with 136817 rows.
+[2023-01-02 14:10:39] (12s) Starting to evaluate predicate _Expr#92cb915f::DotExpr::getProperty#0#dispred#ff_10#join_rhs__Expr#92cb915f::ExprOrType#f_project#E__#join_rhs/2@c4902evo
+[2023-01-02 14:10:39] (12s)  >>> Created relation _Expr#92cb915f::DotExpr::getProperty#0#dispred#ff_10#join_rhs__Expr#92cb915f::ExprOrType#f_project#E__#join_rhs/2@c4902evo with 136817 rows.
+[2023-01-02 14:10:39] (12s) Starting to evaluate predicate _Expr#92cb915f::ParExpr::getExpression#0#dispred#ff_10#join_rhs__Expr#92cb915f::ExprOrType#f_project__#join_rhs/2@13bb031l
+[2023-01-02 14:10:39] (12s)  >>> Created relation _Expr#92cb915f::ParExpr::getExpression#0#dispred#ff_10#join_rhs__Expr#92cb915f::ExprOrType#f_project__#join_rhs/2@13bb031l with 22101 rows.
+[2023-01-02 14:10:39] (12s) No need to promote strings for predicate Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff  as it does not contain computed strings.
+[2023-01-02 14:10:39] (12s)  >>> Created relation Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff/2@b285c01q with 1384699 rows.
+[2023-01-02 14:10:39] (12s) Starting to evaluate predicate Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff_10#join_rhs/2@532c76kg
+[2023-01-02 14:10:39] (12s)  >>> Created relation Expr#92cb915f::ExprOrType::getUnderlyingValue#0#dispred#ff_10#join_rhs/2@532c76kg with 1384699 rows.
+[2023-01-02 14:10:39] (12s) Starting to evaluate predicate Expr#92cb915f::getConstantString#1#ff/2@i1#606c5499 (iteration 1)
+[2023-01-02 14:10:39] (12s) 			 - Expr#92cb915f::getConstantString#1#ff_delta has 42627 rows (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:39] (12s) Starting to evaluate predicate Expr#92cb915f::getConstantString#1#ff/2@i2#606c5499 (iteration 2)
+[2023-01-02 14:10:39] (12s) 			 - Expr#92cb915f::getConstantString#1#ff_delta has 1632 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:40] (12s) Starting to evaluate predicate Expr#92cb915f::getConstantString#1#ff/2@i3#606c5499 (iteration 3)
+[2023-01-02 14:10:40] (12s) 			 - Expr#92cb915f::getConstantString#1#ff_delta has 2 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:40] (12s) Starting to evaluate predicate Expr#92cb915f::getConstantString#1#ff/2@i4#606c5499 (iteration 4)
+[2023-01-02 14:10:40] (12s) Empty delta for Expr#92cb915f::getConstantString#1#ff_delta (order for disjuncts: delta=317).
+[2023-01-02 14:10:40] (12s) Accumulating deltas
+[2023-01-02 14:10:40] (12s)  >>> Created relation Expr#92cb915f::getConstantString#1#ff/2@606c5499 with 44261 rows.
+[2023-01-02 14:10:40] (12s) Starting to evaluate predicate Stmt#8986e1c9::DeclStmt#f/1@6b6aaep5
+[2023-01-02 14:10:40] (12s)  >>> Created relation Stmt#8986e1c9::DeclStmt#f/1@6b6aaep5 with 17733 rows.
+[2023-01-02 14:10:40] (12s) Starting to evaluate predicate exprs_12034#join_rhs/5@72390atm
+[2023-01-02 14:10:40] (13s)  >>> Created relation exprs_12034#join_rhs/5@72390atm with 1384699 rows.
+[2023-01-02 14:10:40] (13s) Starting to evaluate predicate Stmt#8986e1c9::DeclStmt::getDecl#1#dispred#fff/3@a26dd6q3
+[2023-01-02 14:10:40] (13s)  >>> Created relation Stmt#8986e1c9::DeclStmt::getDecl#1#dispred#fff/3@a26dd6q3 with 36547 rows.
+[2023-01-02 14:10:40] (13s) Starting to evaluate predicate Stmt#8986e1c9::DeclStmt::getDecl#1#dispred#fff_120#join_rhs/3@665bd9h2
+[2023-01-02 14:10:40] (13s)  >>> Created relation Stmt#8986e1c9::DeclStmt::getDecl#1#dispred#fff_120#join_rhs/3@665bd9h2 with 36547 rows.
+[2023-01-02 14:10:40] (13s) Starting to evaluate predicate _Stmt#8986e1c9::DeclStmt::getDecl#1#dispred#fff_120#join_rhs__Expr#92cb915f::ExprOrType#f_project#Ex__#join_rhs/2@dd9c989l
+[2023-01-02 14:10:40] (13s)  >>> Created relation _Stmt#8986e1c9::DeclStmt::getDecl#1#dispred#fff_120#join_rhs__Expr#92cb915f::ExprOrType#f_project#Ex__#join_rhs/2@dd9c989l with 17733 rows.
+[2023-01-02 14:10:40] (13s) Starting to evaluate predicate JSDoc#aa37b89c::Documentable::getDocumentation#0#dispred#ff/2@i1#ebef02te (iteration 1)
+[2023-01-02 14:10:40] (13s) 			 - JSDoc#aa37b89c::Documentable::getDocumentation#0#dispred#ff_delta has 39272 rows (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:40] (13s) Starting to evaluate predicate JSDoc#aa37b89c::Documentable::getDocumentation#0#dispred#ff/2@i2#ebef02te (iteration 2)
+[2023-01-02 14:10:40] (13s) 			 - JSDoc#aa37b89c::Documentable::getDocumentation#0#dispred#ff_delta has 15923 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:40] (13s) Starting to evaluate predicate JSDoc#aa37b89c::Documentable::getDocumentation#0#dispred#ff/2@i3#ebef02te (iteration 3)
+[2023-01-02 14:10:40] (13s) 			 - JSDoc#aa37b89c::Documentable::getDocumentation#0#dispred#ff_delta has 405 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:40] (13s) Starting to evaluate predicate JSDoc#aa37b89c::Documentable::getDocumentation#0#dispred#ff/2@i4#ebef02te (iteration 4)
+[2023-01-02 14:10:40] (13s) 			 - JSDoc#aa37b89c::Documentable::getDocumentation#0#dispred#ff_delta has 2 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:40] (13s) Starting to evaluate predicate JSDoc#aa37b89c::Documentable::getDocumentation#0#dispred#ff/2@i5#ebef02te (iteration 5)
+[2023-01-02 14:10:40] (13s) Empty delta for JSDoc#aa37b89c::Documentable::getDocumentation#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:40] (13s) Accumulating deltas
+[2023-01-02 14:10:40] (13s)  >>> Created relation JSDoc#aa37b89c::Documentable::getDocumentation#0#dispred#ff/2@ebef02te with 55602 rows.
+[2023-01-02 14:10:40] (13s) No need to promote strings for predicate JSDoc#aa37b89c::Documentable::getDocumentation#0#dispred#ff  as it does not contain computed strings.
+[2023-01-02 14:10:40] (13s)  >>> Created relation JSDoc#aa37b89c::Documentable::getDocumentation#0#dispred#ff/2@0cc80a9h with 55602 rows.
+[2023-01-02 14:10:40] (13s) Starting to evaluate predicate JSDoc#aa37b89c::Documentable::getDocumentation#0#dispred#ff_10#join_rhs/2@98168e6j
+[2023-01-02 14:10:40] (13s)  >>> Created relation JSDoc#aa37b89c::Documentable::getDocumentation#0#dispred#ff_10#join_rhs/2@98168e6j with 55602 rows.
+[2023-01-02 14:10:40] (13s)  >>> Created relation jsdoc_tags/5@2390a30d with 18183 rows.
+[2023-01-02 14:10:40] (13s)  >>> Created relation jsdoc_type_exprs/5@cacd52pr with 23204 rows.
+[2023-01-02 14:10:40] (13s) Starting to evaluate predicate jsdoc_type_exprs_2#join_rhs/1@9e39d81t
+[2023-01-02 14:10:40] (13s)  >>> Created relation jsdoc_type_exprs_2#join_rhs/1@9e39d81t with 19921 rows.
+[2023-01-02 14:10:40] (13s) Starting to evaluate predicate jsdoc_type_exprs_20#join_rhs/2@5f7cc1fs
+[2023-01-02 14:10:40] (13s)  >>> Created relation jsdoc_type_exprs_20#join_rhs/2@5f7cc1fs with 23204 rows.
+[2023-01-02 14:10:40] (13s) Starting to evaluate predicate JSDoc#aa37b89c::JSDocTypeExpr::getJSDocComment#0#dispred#ff/2@i1#76951xci (iteration 1)
+[2023-01-02 14:10:40] (13s) Empty delta for JSDoc#aa37b89c::JSDocTypeExpr::getJSDocComment#0#dispred#ff_delta (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:40] (13s) Starting to evaluate predicate JSDoc#aa37b89c::JSDocTypeExprParent::getJSDocComment#0#dispred#bf/2@i1#76951wci (iteration 1)
+[2023-01-02 14:10:40] (13s) 			 - JSDoc#aa37b89c::JSDocTypeExprParent::getJSDocComment#0#dispred#bf_delta has 13365 rows (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:40] (13s) Starting to evaluate predicate JSDoc#aa37b89c::JSDocTypeExpr::getJSDocComment#0#dispred#ff/2@i2#76951xci (iteration 2)
+[2023-01-02 14:10:40] (13s) 			 - JSDoc#aa37b89c::JSDocTypeExpr::getJSDocComment#0#dispred#ff_delta has 13365 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:40] (13s) Empty delta for JSDoc#aa37b89c::JSDocTypeExprParent::getJSDocComment#0#dispred#bf_delta (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:40] (13s) Empty delta for JSDoc#aa37b89c::JSDocTypeExpr::getJSDocComment#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:40] (13s) Starting to evaluate predicate JSDoc#aa37b89c::JSDocTypeExprParent::getJSDocComment#0#dispred#bf/2@i3#76951wci (iteration 3)
+[2023-01-02 14:10:40] (13s) 			 - JSDoc#aa37b89c::JSDocTypeExprParent::getJSDocComment#0#dispred#bf_delta has 3885 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:40] (13s) Starting to evaluate predicate JSDoc#aa37b89c::JSDocTypeExpr::getJSDocComment#0#dispred#ff/2@i4#76951xci (iteration 4)
+[2023-01-02 14:10:40] (13s) 			 - JSDoc#aa37b89c::JSDocTypeExpr::getJSDocComment#0#dispred#ff_delta has 5260 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:40] (13s) Empty delta for JSDoc#aa37b89c::JSDocTypeExprParent::getJSDocComment#0#dispred#bf_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:40] (13s) Empty delta for JSDoc#aa37b89c::JSDocTypeExpr::getJSDocComment#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:40] (13s) Starting to evaluate predicate JSDoc#aa37b89c::JSDocTypeExprParent::getJSDocComment#0#dispred#bf/2@i5#76951wci (iteration 5)
+[2023-01-02 14:10:40] (13s) 			 - JSDoc#aa37b89c::JSDocTypeExprParent::getJSDocComment#0#dispred#bf_delta has 1619 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:40] (13s) Starting to evaluate predicate JSDoc#aa37b89c::JSDocTypeExpr::getJSDocComment#0#dispred#ff/2@i6#76951xci (iteration 6)
+[2023-01-02 14:10:40] (13s) 			 - JSDoc#aa37b89c::JSDocTypeExpr::getJSDocComment#0#dispred#ff_delta has 2873 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:40] (13s) Empty delta for JSDoc#aa37b89c::JSDocTypeExprParent::getJSDocComment#0#dispred#bf_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:40] (13s) Empty delta for JSDoc#aa37b89c::JSDocTypeExpr::getJSDocComment#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:40] (13s) Starting to evaluate predicate JSDoc#aa37b89c::JSDocTypeExprParent::getJSDocComment#0#dispred#bf/2@i7#76951wci (iteration 7)
+[2023-01-02 14:10:40] (13s) 			 - JSDoc#aa37b89c::JSDocTypeExprParent::getJSDocComment#0#dispred#bf_delta has 794 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:40] (13s) Starting to evaluate predicate JSDoc#aa37b89c::JSDocTypeExpr::getJSDocComment#0#dispred#ff/2@i8#76951xci (iteration 8)
+[2023-01-02 14:10:40] (13s) 			 - JSDoc#aa37b89c::JSDocTypeExpr::getJSDocComment#0#dispred#ff_delta has 1317 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:40] (13s) Empty delta for JSDoc#aa37b89c::JSDocTypeExprParent::getJSDocComment#0#dispred#bf_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:40] (13s) Empty delta for JSDoc#aa37b89c::JSDocTypeExpr::getJSDocComment#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:40] (13s) Starting to evaluate predicate JSDoc#aa37b89c::JSDocTypeExprParent::getJSDocComment#0#dispred#bf/2@i9#76951wci (iteration 9)
+[2023-01-02 14:10:40] (13s) 			 - JSDoc#aa37b89c::JSDocTypeExprParent::getJSDocComment#0#dispred#bf_delta has 206 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:40] (13s) Starting to evaluate predicate JSDoc#aa37b89c::JSDocTypeExpr::getJSDocComment#0#dispred#ff/2@i10#76951xci (iteration 10)
+[2023-01-02 14:10:40] (13s) 			 - JSDoc#aa37b89c::JSDocTypeExpr::getJSDocComment#0#dispred#ff_delta has 309 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:40] (13s) Empty delta for JSDoc#aa37b89c::JSDocTypeExprParent::getJSDocComment#0#dispred#bf_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:40] (13s) Empty delta for JSDoc#aa37b89c::JSDocTypeExpr::getJSDocComment#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:40] (13s) Starting to evaluate predicate JSDoc#aa37b89c::JSDocTypeExprParent::getJSDocComment#0#dispred#bf/2@i11#76951wci (iteration 11)
+[2023-01-02 14:10:40] (13s) 			 - JSDoc#aa37b89c::JSDocTypeExprParent::getJSDocComment#0#dispred#bf_delta has 44 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:40] (13s) Starting to evaluate predicate JSDoc#aa37b89c::JSDocTypeExpr::getJSDocComment#0#dispred#ff/2@i12#76951xci (iteration 12)
+[2023-01-02 14:10:40] (13s) 			 - JSDoc#aa37b89c::JSDocTypeExpr::getJSDocComment#0#dispred#ff_delta has 66 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:40] (13s) Empty delta for JSDoc#aa37b89c::JSDocTypeExprParent::getJSDocComment#0#dispred#bf_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:40] (13s) Empty delta for JSDoc#aa37b89c::JSDocTypeExpr::getJSDocComment#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:40] (13s) Starting to evaluate predicate JSDoc#aa37b89c::JSDocTypeExprParent::getJSDocComment#0#dispred#bf/2@i13#76951wci (iteration 13)
+[2023-01-02 14:10:40] (13s) 			 - JSDoc#aa37b89c::JSDocTypeExprParent::getJSDocComment#0#dispred#bf_delta has 6 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:40] (13s) Starting to evaluate predicate JSDoc#aa37b89c::JSDocTypeExpr::getJSDocComment#0#dispred#ff/2@i14#76951xci (iteration 14)
+[2023-01-02 14:10:40] (13s) 			 - JSDoc#aa37b89c::JSDocTypeExpr::getJSDocComment#0#dispred#ff_delta has 10 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:40] (13s) Empty delta for JSDoc#aa37b89c::JSDocTypeExprParent::getJSDocComment#0#dispred#bf_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:40] (13s) Empty delta for JSDoc#aa37b89c::JSDocTypeExpr::getJSDocComment#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:40] (13s) Starting to evaluate predicate JSDoc#aa37b89c::JSDocTypeExprParent::getJSDocComment#0#dispred#bf/2@i15#76951wci (iteration 15)
+[2023-01-02 14:10:40] (13s) 			 - JSDoc#aa37b89c::JSDocTypeExprParent::getJSDocComment#0#dispred#bf_delta has 2 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:40] (13s) Starting to evaluate predicate JSDoc#aa37b89c::JSDocTypeExpr::getJSDocComment#0#dispred#ff/2@i16#76951xci (iteration 16)
+[2023-01-02 14:10:40] (13s) 			 - JSDoc#aa37b89c::JSDocTypeExpr::getJSDocComment#0#dispred#ff_delta has 4 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:40] (13s) Empty delta for JSDoc#aa37b89c::JSDocTypeExprParent::getJSDocComment#0#dispred#bf_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:40] (13s) Empty delta for JSDoc#aa37b89c::JSDocTypeExpr::getJSDocComment#0#dispred#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:40] (13s) Starting to evaluate predicate JSDoc#aa37b89c::JSDocTypeExprParent::getJSDocComment#0#dispred#bf/2@i17#76951wci (iteration 17)
+[2023-01-02 14:10:40] (13s) Empty delta for JSDoc#aa37b89c::JSDocTypeExprParent::getJSDocComment#0#dispred#bf_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:40] (13s) Accumulating deltas
+[2023-01-02 14:10:40] (13s)  >>> Created relation JSDoc#aa37b89c::JSDocTypeExprParent::getJSDocComment#0#dispred#bf/2@76951wci with 19921 rows.
+[2023-01-02 14:10:40] (13s)  >>> Created relation JSDoc#aa37b89c::JSDocTypeExpr::getJSDocComment#0#dispred#ff/2@76951xci with 23204 rows.
+[2023-01-02 14:10:40] (13s) Starting to evaluate predicate Expr#92cb915f::Property::getObjectExpr#0#dispred#ff/2@e2e227sk
+[2023-01-02 14:10:40] (13s)  >>> Created relation Expr#92cb915f::Property::getObjectExpr#0#dispred#ff/2@e2e227sk with 23145 rows.
+[2023-01-02 14:10:40] (13s)  >>> Created relation enclosing_stmt/2@98be723r with 1336410 rows.
+[2023-01-02 14:10:40] (13s) Starting to evaluate predicate Expr::ExprOrType_not_ArrowFunctionExpr_FunctionExpr_TypeExpr#f/1@395be8u3
+[2023-01-02 14:10:40] (13s)  >>> Created relation Expr::ExprOrType_not_ArrowFunctionExpr_FunctionExpr_TypeExpr#f/1@395be8u3 with 1363901 rows.
+[2023-01-02 14:10:40] (13s) Starting to evaluate predicate Expr#92cb915f::ExprOrType::getEnclosingStmt#0#dispred#ff/2@dad27dko
+[2023-01-02 14:10:41] (13s)  >>> Created relation Expr#92cb915f::ExprOrType::getEnclosingStmt#0#dispred#ff/2@dad27dko with 1336410 rows.
+[2023-01-02 14:10:41] (13s) Starting to evaluate predicate JSDoc#aa37b89c::JSDocTypeExpr::getEnclosingStmt#0#dispred#ff/2@991d8f8i
+[2023-01-02 14:10:41] (13s)  >>> Created relation JSDoc#aa37b89c::JSDocTypeExpr::getEnclosingStmt#0#dispred#ff/2@991d8f8i with 23204 rows.
+[2023-01-02 14:10:41] (13s) Starting to evaluate predicate StmtContainers#f9b78d9f::getStmtContainer#1#ff/2@c658c1of
+[2023-01-02 14:10:41] (14s)  >>> Created relation StmtContainers#f9b78d9f::getStmtContainer#1#ff/2@c658c1of with 1705358 rows.
+[2023-01-02 14:10:41] (14s) No need to promote strings for predicate StmtContainers#f9b78d9f::getStmtContainer#1#ff  as it does not contain computed strings.
+[2023-01-02 14:10:41] (14s)  >>> Created relation StmtContainers#f9b78d9f::getStmtContainer#1#ff/2@bc5236f1 with 1705358 rows.
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate AST#4fc16b88::StmtContainer::getEnclosingContainer#0#dispred#ff/2@52f20ffe
+[2023-01-02 14:10:41] (14s)  >>> Created relation AST#4fc16b88::StmtContainer::getEnclosingContainer#0#dispred#ff/2@52f20ffe with 26193 rows.
+[2023-01-02 14:10:41] (14s) No need to promote strings for predicate AST#4fc16b88::StmtContainer::getEnclosingContainer#0#dispred#ff  as it does not contain computed strings.
+[2023-01-02 14:10:41] (14s)  >>> Created relation AST#4fc16b88::StmtContainer::getEnclosingContainer#0#dispred#ff/2@9db05b7d with 26193 rows.
+[2023-01-02 14:10:41] (14s)  >>> Created relation scopes/2@7781a3f0 with 29457 rows.
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate scopes_10#join_rhs/2@251149kb
+[2023-01-02 14:10:41] (14s)  >>> Created relation scopes_10#join_rhs/2@251149kb with 29457 rows.
+[2023-01-02 14:10:41] (14s)  >>> Created relation variables/3@fabdb5uc with 106359 rows.
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate variables_20#join_rhs/2@c01c30ag
+[2023-01-02 14:10:41] (14s)  >>> Created relation variables_20#join_rhs/2@c01c30ag with 106359 rows.
+[2023-01-02 14:10:41] (14s)  >>> Created relation bind/2@dfd8701j with 311275 rows.
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate bind_10#join_rhs/2@842f0cje
+[2023-01-02 14:10:41] (14s)  >>> Created relation bind_10#join_rhs/2@842f0cje with 311275 rows.
+[2023-01-02 14:10:41] (14s)  >>> Created relation is_arguments_object/1@cd566e3m with 25107 rows.
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Variables#51c25ee5::GlobalVarAccess#f/1@42cc7dj2
+[2023-01-02 14:10:41] (14s)  >>> Created relation Variables#51c25ee5::GlobalVarAccess#f/1@42cc7dj2 with 23739 rows.
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Constants#db6547f3::SyntacticConstants::UndefinedConstant#f/1@b41497um
+[2023-01-02 14:10:41] (14s)  >>> Created relation Constants#db6547f3::SyntacticConstants::UndefinedConstant#f/1@b41497um with 2257 rows.
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Constants#db6547f3::SyntacticConstants::InfinityConstant#f/1@b6e5d32j
+[2023-01-02 14:10:41] (14s)  >>> Created relation Constants#db6547f3::SyntacticConstants::InfinityConstant#f/1@b6e5d32j with 4 rows.
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Constants#db6547f3::SyntacticConstants::NaNConstant#f/1@824bbc7t
+[2023-01-02 14:10:41] (14s)  >>> Created relation Constants#db6547f3::SyntacticConstants::NaNConstant#f/1@824bbc7t with 29 rows.
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Constants#db6547f3::SyntacticConstants::WrappedConstant#f/1@i1#e5f040w2 (iteration 1)
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::WrappedConstant#f_delta (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Constants#db6547f3::SyntacticConstants::UnaryConstant#f/1@i1#e5f04zf2 (iteration 1)
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::UnaryConstant#f_delta (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Constants#db6547f3::SyntacticConstants::SyntacticConstant#class#f/1@i1#e5f04yf2 (iteration 1)
+[2023-01-02 14:10:41] (14s) 			 - Constants#db6547f3::SyntacticConstants::SyntacticConstant#class#f_delta has 217085 rows (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Constants#db6547f3::SyntacticConstants::BinaryConstant#f/1@i1#e5f04xf2 (iteration 1)
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::BinaryConstant#f_delta (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Constants#db6547f3::SyntacticConstants::ConditionalConstant#f/1@i1#e5f04wf2 (iteration 1)
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::ConditionalConstant#f_delta (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Constants#db6547f3::SyntacticConstants::WrappedConstant#f/1@i2#e5f040w2 (iteration 2)
+[2023-01-02 14:10:41] (14s) 			 - Constants#db6547f3::SyntacticConstants::WrappedConstant#f_delta has 225545 rows (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate _Constants#db6547f3::SyntacticConstants::SyntacticConstant#class#f#prev_delta_exprs_032#join_rhs#shared/1@i2#L0#e5f04wf2 (iteration 2)
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Constants#db6547f3::SyntacticConstants::UnaryConstant#f/1@i2#e5f04zf2 (iteration 2)
+[2023-01-02 14:10:41] (14s) 			 - Constants#db6547f3::SyntacticConstants::UnaryConstant#f_delta has 24434 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::SyntacticConstant#class#f_delta (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Constants#db6547f3::SyntacticConstants::BinaryConstant#f/1@i2#e5f04xf2 (iteration 2)
+[2023-01-02 14:10:41] (14s) 			 - Constants#db6547f3::SyntacticConstants::BinaryConstant#f_delta has 3468 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Constants#db6547f3::SyntacticConstants::ConditionalConstant#f/1@i2#e5f04wf2 (iteration 2)
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::ConditionalConstant#f_delta (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::WrappedConstant#f_delta (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::UnaryConstant#f_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Constants#db6547f3::SyntacticConstants::SyntacticConstant#class#f/1@i3#e5f04yf2 (iteration 3)
+[2023-01-02 14:10:41] (14s) 			 - Constants#db6547f3::SyntacticConstants::SyntacticConstant#class#f_delta has 34521 rows (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::BinaryConstant#f_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::ConditionalConstant#f_delta (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Constants#db6547f3::SyntacticConstants::WrappedConstant#f/1@i4#e5f040w2 (iteration 4)
+[2023-01-02 14:10:41] (14s) 			 - Constants#db6547f3::SyntacticConstants::WrappedConstant#f_delta has 29057 rows (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate _Constants#db6547f3::SyntacticConstants::SyntacticConstant#class#f#prev_delta_exprs_032#join_rhs#shared/1@i4#L0#e5f04wf2 (iteration 4)
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Constants#db6547f3::SyntacticConstants::UnaryConstant#f/1@i4#e5f04zf2 (iteration 4)
+[2023-01-02 14:10:41] (14s) 			 - Constants#db6547f3::SyntacticConstants::UnaryConstant#f_delta has 16 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::SyntacticConstant#class#f_delta (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Constants#db6547f3::SyntacticConstants::BinaryConstant#f/1@i4#e5f04xf2 (iteration 4)
+[2023-01-02 14:10:41] (14s) 			 - Constants#db6547f3::SyntacticConstants::BinaryConstant#f_delta has 10370 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Constants#db6547f3::SyntacticConstants::ConditionalConstant#f/1@i4#e5f04wf2 (iteration 4)
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::ConditionalConstant#f_delta (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::WrappedConstant#f_delta (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::UnaryConstant#f_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Constants#db6547f3::SyntacticConstants::SyntacticConstant#class#f/1@i5#e5f04yf2 (iteration 5)
+[2023-01-02 14:10:41] (14s) 			 - Constants#db6547f3::SyntacticConstants::SyntacticConstant#class#f_delta has 13374 rows (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::BinaryConstant#f_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::ConditionalConstant#f_delta (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Constants#db6547f3::SyntacticConstants::WrappedConstant#f/1@i6#e5f040w2 (iteration 6)
+[2023-01-02 14:10:41] (14s) 			 - Constants#db6547f3::SyntacticConstants::WrappedConstant#f_delta has 10444 rows (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate _Constants#db6547f3::SyntacticConstants::SyntacticConstant#class#f#prev_delta_exprs_032#join_rhs#shared/1@i6#L0#e5f04wf2 (iteration 6)
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Constants#db6547f3::SyntacticConstants::UnaryConstant#f/1@i6#e5f04zf2 (iteration 6)
+[2023-01-02 14:10:41] (14s) 			 - Constants#db6547f3::SyntacticConstants::UnaryConstant#f_delta has 8 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::SyntacticConstant#class#f_delta (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Constants#db6547f3::SyntacticConstants::BinaryConstant#f/1@i6#e5f04xf2 (iteration 6)
+[2023-01-02 14:10:41] (14s) 			 - Constants#db6547f3::SyntacticConstants::BinaryConstant#f_delta has 6752 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Constants#db6547f3::SyntacticConstants::ConditionalConstant#f/1@i6#e5f04wf2 (iteration 6)
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::ConditionalConstant#f_delta (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::WrappedConstant#f_delta (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::UnaryConstant#f_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Constants#db6547f3::SyntacticConstants::SyntacticConstant#class#f/1@i7#e5f04yf2 (iteration 7)
+[2023-01-02 14:10:41] (14s) 			 - Constants#db6547f3::SyntacticConstants::SyntacticConstant#class#f_delta has 6822 rows (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::BinaryConstant#f_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::ConditionalConstant#f_delta (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Constants#db6547f3::SyntacticConstants::WrappedConstant#f/1@i8#e5f040w2 (iteration 8)
+[2023-01-02 14:10:41] (14s) 			 - Constants#db6547f3::SyntacticConstants::WrappedConstant#f_delta has 7384 rows (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate _Constants#db6547f3::SyntacticConstants::SyntacticConstant#class#f#prev_delta_exprs_032#join_rhs#shared/1@i8#L0#e5f04wf2 (iteration 8)
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Constants#db6547f3::SyntacticConstants::UnaryConstant#f/1@i8#e5f04zf2 (iteration 8)
+[2023-01-02 14:10:41] (14s) 			 - Constants#db6547f3::SyntacticConstants::UnaryConstant#f_delta has 25 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::SyntacticConstant#class#f_delta (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Constants#db6547f3::SyntacticConstants::BinaryConstant#f/1@i8#e5f04xf2 (iteration 8)
+[2023-01-02 14:10:41] (14s) 			 - Constants#db6547f3::SyntacticConstants::BinaryConstant#f_delta has 4248 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Constants#db6547f3::SyntacticConstants::ConditionalConstant#f/1@i8#e5f04wf2 (iteration 8)
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::ConditionalConstant#f_delta (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::WrappedConstant#f_delta (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::UnaryConstant#f_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Constants#db6547f3::SyntacticConstants::SyntacticConstant#class#f/1@i9#e5f04yf2 (iteration 9)
+[2023-01-02 14:10:41] (14s) 			 - Constants#db6547f3::SyntacticConstants::SyntacticConstant#class#f_delta has 4896 rows (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::BinaryConstant#f_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::ConditionalConstant#f_delta (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Constants#db6547f3::SyntacticConstants::WrappedConstant#f/1@i10#e5f040w2 (iteration 10)
+[2023-01-02 14:10:41] (14s) 			 - Constants#db6547f3::SyntacticConstants::WrappedConstant#f_delta has 5390 rows (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate _Constants#db6547f3::SyntacticConstants::SyntacticConstant#class#f#prev_delta_exprs_032#join_rhs#shared/1@i10#L0#e5f04wf2 (iteration 10)
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Constants#db6547f3::SyntacticConstants::UnaryConstant#f/1@i10#e5f04zf2 (iteration 10)
+[2023-01-02 14:10:41] (14s) 			 - Constants#db6547f3::SyntacticConstants::UnaryConstant#f_delta has 238 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::SyntacticConstant#class#f_delta (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Constants#db6547f3::SyntacticConstants::BinaryConstant#f/1@i10#e5f04xf2 (iteration 10)
+[2023-01-02 14:10:41] (14s) 			 - Constants#db6547f3::SyntacticConstants::BinaryConstant#f_delta has 12 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Constants#db6547f3::SyntacticConstants::ConditionalConstant#f/1@i10#e5f04wf2 (iteration 10)
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::ConditionalConstant#f_delta (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::WrappedConstant#f_delta (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::UnaryConstant#f_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Constants#db6547f3::SyntacticConstants::SyntacticConstant#class#f/1@i11#e5f04yf2 (iteration 11)
+[2023-01-02 14:10:41] (14s) 			 - Constants#db6547f3::SyntacticConstants::SyntacticConstant#class#f_delta has 1330 rows (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::BinaryConstant#f_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::ConditionalConstant#f_delta (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Constants#db6547f3::SyntacticConstants::WrappedConstant#f/1@i12#e5f040w2 (iteration 12)
+[2023-01-02 14:10:41] (14s) 			 - Constants#db6547f3::SyntacticConstants::WrappedConstant#f_delta has 332 rows (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate _Constants#db6547f3::SyntacticConstants::SyntacticConstant#class#f#prev_delta_exprs_032#join_rhs#shared/1@i12#L0#e5f04wf2 (iteration 12)
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Constants#db6547f3::SyntacticConstants::UnaryConstant#f/1@i12#e5f04zf2 (iteration 12)
+[2023-01-02 14:10:41] (14s) 			 - Constants#db6547f3::SyntacticConstants::UnaryConstant#f_delta has 444 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::SyntacticConstant#class#f_delta (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Constants#db6547f3::SyntacticConstants::BinaryConstant#f/1@i12#e5f04xf2 (iteration 12)
+[2023-01-02 14:10:41] (14s) 			 - Constants#db6547f3::SyntacticConstants::BinaryConstant#f_delta has 22 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Constants#db6547f3::SyntacticConstants::ConditionalConstant#f/1@i12#e5f04wf2 (iteration 12)
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::ConditionalConstant#f_delta (order for disjuncts: delta=3163).
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::WrappedConstant#f_delta (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::UnaryConstant#f_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Constants#db6547f3::SyntacticConstants::SyntacticConstant#class#f/1@i13#e5f04yf2 (iteration 13)
+[2023-01-02 14:10:41] (14s) 			 - Constants#db6547f3::SyntacticConstants::SyntacticConstant#class#f_delta has 528 rows (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::BinaryConstant#f_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::ConditionalConstant#f_delta (order for disjuncts: delta=3163).
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Constants#db6547f3::SyntacticConstants::WrappedConstant#f/1@i14#e5f040w2 (iteration 14)
+[2023-01-02 14:10:41] (14s) 			 - Constants#db6547f3::SyntacticConstants::WrappedConstant#f_delta has 599 rows (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate _Constants#db6547f3::SyntacticConstants::SyntacticConstant#class#f#prev_delta_exprs_032#join_rhs#shared/1@i14#L0#e5f04wf2 (iteration 14)
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Constants#db6547f3::SyntacticConstants::UnaryConstant#f/1@i14#e5f04zf2 (iteration 14)
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::UnaryConstant#f_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::SyntacticConstant#class#f_delta (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Constants#db6547f3::SyntacticConstants::BinaryConstant#f/1@i14#e5f04xf2 (iteration 14)
+[2023-01-02 14:10:41] (14s) 			 - Constants#db6547f3::SyntacticConstants::BinaryConstant#f_delta has 8 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Constants#db6547f3::SyntacticConstants::ConditionalConstant#f/1@i14#e5f04wf2 (iteration 14)
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::ConditionalConstant#f_delta (order for disjuncts: delta=3163).
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::WrappedConstant#f_delta (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::UnaryConstant#f_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Constants#db6547f3::SyntacticConstants::SyntacticConstant#class#f/1@i15#e5f04yf2 (iteration 15)
+[2023-01-02 14:10:41] (14s) 			 - Constants#db6547f3::SyntacticConstants::SyntacticConstant#class#f_delta has 203 rows (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::BinaryConstant#f_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::ConditionalConstant#f_delta (order for disjuncts: delta=3163).
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Constants#db6547f3::SyntacticConstants::WrappedConstant#f/1@i16#e5f040w2 (iteration 16)
+[2023-01-02 14:10:41] (14s) 			 - Constants#db6547f3::SyntacticConstants::WrappedConstant#f_delta has 8 rows (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate _Constants#db6547f3::SyntacticConstants::SyntacticConstant#class#f#prev_delta_exprs_032#join_rhs#shared/1@i16#L0#e5f04wf2 (iteration 16)
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Constants#db6547f3::SyntacticConstants::UnaryConstant#f/1@i16#e5f04zf2 (iteration 16)
+[2023-01-02 14:10:41] (14s) 			 - Constants#db6547f3::SyntacticConstants::UnaryConstant#f_delta has 4 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::SyntacticConstant#class#f_delta (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Constants#db6547f3::SyntacticConstants::BinaryConstant#f/1@i16#e5f04xf2 (iteration 16)
+[2023-01-02 14:10:41] (14s) 			 - Constants#db6547f3::SyntacticConstants::BinaryConstant#f_delta has 2 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Constants#db6547f3::SyntacticConstants::ConditionalConstant#f/1@i16#e5f04wf2 (iteration 16)
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::ConditionalConstant#f_delta (order for disjuncts: delta=3163).
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::WrappedConstant#f_delta (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::UnaryConstant#f_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Constants#db6547f3::SyntacticConstants::SyntacticConstant#class#f/1@i17#e5f04yf2 (iteration 17)
+[2023-01-02 14:10:41] (14s) 			 - Constants#db6547f3::SyntacticConstants::SyntacticConstant#class#f_delta has 6 rows (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::BinaryConstant#f_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::ConditionalConstant#f_delta (order for disjuncts: delta=3163).
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Constants#db6547f3::SyntacticConstants::WrappedConstant#f/1@i18#e5f040w2 (iteration 18)
+[2023-01-02 14:10:41] (14s) 			 - Constants#db6547f3::SyntacticConstants::WrappedConstant#f_delta has 9 rows (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate _Constants#db6547f3::SyntacticConstants::SyntacticConstant#class#f#prev_delta_exprs_032#join_rhs#shared/1@i18#L0#e5f04wf2 (iteration 18)
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Constants#db6547f3::SyntacticConstants::UnaryConstant#f/1@i18#e5f04zf2 (iteration 18)
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::UnaryConstant#f_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::SyntacticConstant#class#f_delta (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Constants#db6547f3::SyntacticConstants::BinaryConstant#f/1@i18#e5f04xf2 (iteration 18)
+[2023-01-02 14:10:41] (14s) 			 - Constants#db6547f3::SyntacticConstants::BinaryConstant#f_delta has 1 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Constants#db6547f3::SyntacticConstants::ConditionalConstant#f/1@i18#e5f04wf2 (iteration 18)
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::ConditionalConstant#f_delta (order for disjuncts: delta=3163).
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::WrappedConstant#f_delta (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::UnaryConstant#f_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Constants#db6547f3::SyntacticConstants::SyntacticConstant#class#f/1@i19#e5f04yf2 (iteration 19)
+[2023-01-02 14:10:41] (14s) 			 - Constants#db6547f3::SyntacticConstants::SyntacticConstant#class#f_delta has 4 rows (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::BinaryConstant#f_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::ConditionalConstant#f_delta (order for disjuncts: delta=3163).
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Constants#db6547f3::SyntacticConstants::WrappedConstant#f/1@i20#e5f040w2 (iteration 20)
+[2023-01-02 14:10:41] (14s) 			 - Constants#db6547f3::SyntacticConstants::WrappedConstant#f_delta has 1 rows (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate _Constants#db6547f3::SyntacticConstants::SyntacticConstant#class#f#prev_delta_exprs_032#join_rhs#shared/1@i20#L0#e5f04wf2 (iteration 20)
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Constants#db6547f3::SyntacticConstants::UnaryConstant#f/1@i20#e5f04zf2 (iteration 20)
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::UnaryConstant#f_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::SyntacticConstant#class#f_delta (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Constants#db6547f3::SyntacticConstants::BinaryConstant#f/1@i20#e5f04xf2 (iteration 20)
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::BinaryConstant#f_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Constants#db6547f3::SyntacticConstants::ConditionalConstant#f/1@i20#e5f04wf2 (iteration 20)
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::ConditionalConstant#f_delta (order for disjuncts: delta=3163).
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::WrappedConstant#f_delta (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::UnaryConstant#f_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Constants#db6547f3::SyntacticConstants::SyntacticConstant#class#f/1@i21#e5f04yf2 (iteration 21)
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::SyntacticConstant#class#f_delta (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::BinaryConstant#f_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:41] (14s) Empty delta for Constants#db6547f3::SyntacticConstants::ConditionalConstant#f_delta (order for disjuncts: delta=3163).
+[2023-01-02 14:10:41] (14s) Accumulating deltas
+[2023-01-02 14:10:41] (14s)  >>> Created relation Constants#db6547f3::SyntacticConstants::ConditionalConstant#f/1@e5f04wf2 with 0 rows.
+[2023-01-02 14:10:41] (14s)  >>> Created relation Constants#db6547f3::SyntacticConstants::BinaryConstant#f/1@e5f04xf2 with 24883 rows.
+[2023-01-02 14:10:41] (14s)  >>> Created relation Constants#db6547f3::SyntacticConstants::SyntacticConstant#class#f/1@e5f04yf2 with 278769 rows.
+[2023-01-02 14:10:41] (14s)  >>> Created relation Constants#db6547f3::SyntacticConstants::UnaryConstant#f/1@e5f04zf2 with 25169 rows.
+[2023-01-02 14:10:41] (14s)  >>> Created relation Constants#db6547f3::SyntacticConstants::WrappedConstant#f/1@e5f040w2 with 278769 rows.
+[2023-01-02 14:10:41] (14s) Inferred that Constants#db6547f3::SyntacticConstants::ConditionalConstant#f/1@19c068ku is empty, due to Constants#db6547f3::SyntacticConstants::ConditionalConstant#f/1@e5f04wf2.
+[2023-01-02 14:10:41] (14s)  >>> Created relation Constants#db6547f3::SyntacticConstants::ConditionalConstant#f/1@19c068ku with 0 rows.
+[2023-01-02 14:10:41] (14s) No need to promote strings for predicate Constants#db6547f3::SyntacticConstants::SyntacticConstant#class#f  as it does not contain computed strings.
+[2023-01-02 14:10:41] (14s)  >>> Created relation Constants#db6547f3::SyntacticConstants::SyntacticConstant#class#f/1@c15c019v with 278769 rows.
+[2023-01-02 14:10:41] (14s) No need to promote strings for predicate Constants#db6547f3::SyntacticConstants::BinaryConstant#f  as it does not contain computed strings.
+[2023-01-02 14:10:41] (14s)  >>> Created relation Constants#db6547f3::SyntacticConstants::BinaryConstant#f/1@11b21env with 24883 rows.
+[2023-01-02 14:10:41] (14s) No need to promote strings for predicate Constants#db6547f3::SyntacticConstants::InfinityConstant#f  as it does not contain computed strings.
+[2023-01-02 14:10:41] (14s)  >>> Created relation Constants#db6547f3::SyntacticConstants::InfinityConstant#f/1@cca24eqe with 4 rows.
+[2023-01-02 14:10:41] (14s) No need to promote strings for predicate Constants#db6547f3::SyntacticConstants::NaNConstant#f  as it does not contain computed strings.
+[2023-01-02 14:10:41] (14s)  >>> Created relation Constants#db6547f3::SyntacticConstants::NaNConstant#f/1@da28637v with 29 rows.
+[2023-01-02 14:10:41] (14s) No need to promote strings for predicate Constants#db6547f3::SyntacticConstants::UnaryConstant#f  as it does not contain computed strings.
+[2023-01-02 14:10:41] (14s)  >>> Created relation Constants#db6547f3::SyntacticConstants::UnaryConstant#f/1@8f5f227l with 25169 rows.
+[2023-01-02 14:10:41] (14s) No need to promote strings for predicate Constants#db6547f3::SyntacticConstants::UndefinedConstant#f  as it does not contain computed strings.
+[2023-01-02 14:10:41] (14s)  >>> Created relation Constants#db6547f3::SyntacticConstants::UndefinedConstant#f/1@5e8316fp with 2257 rows.
+[2023-01-02 14:10:41] (14s)  >>> Created relation Constants#db6547f3::SyntacticConstants::WrappedConstant#f/1@4bffe34p with 278769 rows.
+[2023-01-02 14:10:41] Cachaca resolved layer: #559 computed extensional evaluator Constants#db6547f3::SyntacticConstants::WrappedConstant#f/1@4bffe34p
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Variables#51c25ee5::GlobalVariable#f/1@24f7e0up
+[2023-01-02 14:10:41] (14s)  >>> Created relation Variables#51c25ee5::GlobalVariable#f/1@24f7e0up with 974 rows.
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Variables#51c25ee5::VarAccess::getVariable#0#dispred#ff/2@79195b0k
+[2023-01-02 14:10:41] (14s)  >>> Created relation Variables#51c25ee5::VarAccess::getVariable#0#dispred#ff/2@79195b0k with 311275 rows.
+[2023-01-02 14:10:41] (14s)  >>> Created relation Variables#51c25ee5::VarAccess::getVariable#0#dispred#ff_10#join_rhs/2@bba95ftk with 311275 rows.
+[2023-01-02 14:10:41] Cachaca resolved layer: #215 evaluator Variables#51c25ee5::VarAccess::getVariable#0#dispred#ff_10#join_rhs/2@bba95ftk
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate example#fef222b5::get_global_variable_access_container#2#fff/3@e04132v5
+[2023-01-02 14:10:41] (14s)  >>> Created relation example#fef222b5::get_global_variable_access_container#2#fff/3@e04132v5 with 8163 rows.
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate example#fef222b5::get_global_variable_access_container#2#fff_102#join_rhs/3@e98ba8rq
+[2023-01-02 14:10:41] (14s)  >>> Created relation example#fef222b5::get_global_variable_access_container#2#fff_102#join_rhs/3@e98ba8rq with 8163 rows.
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate Stmt#8986e1c9::DeclStmt::getDecl#1#dispred#fff_102#join_rhs/3@ff73125g
+[2023-01-02 14:10:41] (14s)  >>> Created relation Stmt#8986e1c9::DeclStmt::getDecl#1#dispred#fff_102#join_rhs/3@ff73125g with 36547 rows.
+[2023-01-02 14:10:41] (14s) Starting to evaluate predicate stmts_20#join_rhs/2@fb954def
+[2023-01-02 14:10:42] (14s)  >>> Created relation stmts_20#join_rhs/2@fb954def with 129478 rows.
+[2023-01-02 14:10:42] (14s) Starting to evaluate predicate m#Variables#51c25ee5::BindingPattern#b/1@00b80do5
+[2023-01-02 14:10:42] (14s)  >>> Created relation m#Variables#51c25ee5::BindingPattern#b/1@00b80do5 with 36547 rows.
+[2023-01-02 14:10:42] (14s) Starting to evaluate predicate _exprs_10#join_rhs#join_rhs/1@3ee2b75u
+[2023-01-02 14:10:42] (14s)  >>> Created relation _exprs_10#join_rhs#join_rhs/1@3ee2b75u with 329 rows.
+[2023-01-02 14:10:42] (14s) Starting to evaluate predicate Variables#51c25ee5::PropertyPattern#f/1@d3627frd
+[2023-01-02 14:10:42] (14s)  >>> Created relation Variables#51c25ee5::PropertyPattern#f/1@d3627frd with 942 rows.
+[2023-01-02 14:10:42] (14s) Starting to evaluate predicate exprs_20134#join_rhs/5@e67822h7
+[2023-01-02 14:10:42] (14s)  >>> Created relation exprs_20134#join_rhs/5@e67822h7 with 1384699 rows.
+[2023-01-02 14:10:42] (14s) Starting to evaluate predicate Variables#51c25ee5::ArrayPattern::getAnElement#0#dispred#bf/2@b3e17f9v
+[2023-01-02 14:10:42] (14s)  >>> Created relation Variables#51c25ee5::ArrayPattern::getAnElement#0#dispred#bf/2@b3e17f9v with 89 rows.
+[2023-01-02 14:10:42] (14s) Starting to evaluate predicate m#Variables#51c25ee5::BindingPattern::getABindingVarRef#0#dispred#bf/1@i1#622396bh (iteration 1)
+[2023-01-02 14:10:42] (14s) 			 - m#Variables#51c25ee5::BindingPattern::getABindingVarRef#0#dispred#bf_delta has 1031 rows (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:42] (14s) Starting to evaluate predicate m#Variables#51c25ee5::BindingPattern::getABindingVarRef#0#dispred#bf/1@i2#622396bh (iteration 2)
+[2023-01-02 14:10:42] (14s) Empty delta for m#Variables#51c25ee5::BindingPattern::getABindingVarRef#0#dispred#bf_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:42] (14s) Accumulating deltas
+[2023-01-02 14:10:42] (14s)  >>> Created relation m#Variables#51c25ee5::BindingPattern::getABindingVarRef#0#dispred#bf/1@622396bh with 1031 rows.
+[2023-01-02 14:10:42] (14s) Starting to evaluate predicate m#@varref#b/1@fa0278ql
+[2023-01-02 14:10:42] (14s)  >>> Created relation m#@varref#b/1@fa0278ql with 37578 rows.
+[2023-01-02 14:10:42] (14s) Starting to evaluate predicate @varref#b/1@a82b9a3g
+[2023-01-02 14:10:42] (14s)  >>> Created relation @varref#b/1@a82b9a3g with 37298 rows.
+[2023-01-02 14:10:42] (14s) Starting to evaluate predicate Variables#51c25ee5::BindingPattern#b/1@e598401t
+[2023-01-02 14:10:42] (14s)  >>> Created relation Variables#51c25ee5::BindingPattern#b/1@e598401t with 36547 rows.
+[2023-01-02 14:10:42] (14s) Starting to evaluate predicate _Variables#51c25ee5::PropertyPattern#f__exprs_10#join_rhs#join_rhs_exprs_230#join_rhs_m#Variables#51__#join_rhs/2@eb9822dd
+[2023-01-02 14:10:42] (14s)  >>> Created relation _Variables#51c25ee5::PropertyPattern#f__exprs_10#join_rhs#join_rhs_exprs_230#join_rhs_m#Variables#51__#join_rhs/2@eb9822dd with 48 rows.
+[2023-01-02 14:10:42] (14s) Starting to evaluate predicate _Variables#51c25ee5::ArrayPattern::getAnElement#0#dispred#bf_m#Variables#51c25ee5::BindingPattern::g__#join_rhs/2@e2a9a91i
+[2023-01-02 14:10:42] (14s)  >>> Created relation _Variables#51c25ee5::ArrayPattern::getAnElement#0#dispred#bf_m#Variables#51c25ee5::BindingPattern::g__#join_rhs/2@e2a9a91i with 4 rows.
+[2023-01-02 14:10:42] (14s) Starting to evaluate predicate __exprs_10#join_rhs#join_rhs_exprs_230#join_rhs_m#Variables#51c25ee5::BindingPattern::getABindingVar__#join_rhs/2@48c1acle
+[2023-01-02 14:10:42] (14s)  >>> Created relation __exprs_10#join_rhs#join_rhs_exprs_230#join_rhs_m#Variables#51c25ee5::BindingPattern::getABindingVar__#join_rhs/2@48c1acle with 0 rows.
+[2023-01-02 14:10:42] (14s) Starting to evaluate predicate Variables#51c25ee5::ArrayPattern::getAnElement#0#dispred#bf_10#join_rhs/2@3209b0de
+[2023-01-02 14:10:42] (14s)  >>> Created relation Variables#51c25ee5::ArrayPattern::getAnElement#0#dispred#bf_10#join_rhs/2@3209b0de with 89 rows.
+[2023-01-02 14:10:42] (14s) Starting to evaluate predicate Variables#51c25ee5::BindingPattern::getABindingVarRef#0#dispred#bf/2@i1#825a03hm (iteration 1)
+[2023-01-02 14:10:42] (14s) 			 - Variables#51c25ee5::BindingPattern::getABindingVarRef#0#dispred#bf_delta has 1002 rows (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:42] (14s) Starting to evaluate predicate Variables#51c25ee5::BindingPattern::getABindingVarRef#0#dispred#bf/2@i2#825a03hm (iteration 2)
+[2023-01-02 14:10:42] (14s) 			 - Variables#51c25ee5::BindingPattern::getABindingVarRef#0#dispred#bf_delta has 51 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:42] (14s) Starting to evaluate predicate Variables#51c25ee5::BindingPattern::getABindingVarRef#0#dispred#bf/2@i3#825a03hm (iteration 3)
+[2023-01-02 14:10:42] (14s) 			 - Variables#51c25ee5::BindingPattern::getABindingVarRef#0#dispred#bf_delta has 1 rows (order for disjuncts: delta=317).
+[2023-01-02 14:10:42] (14s) Starting to evaluate predicate Variables#51c25ee5::BindingPattern::getABindingVarRef#0#dispred#bf/2@i4#825a03hm (iteration 4)
+[2023-01-02 14:10:42] (14s) Empty delta for Variables#51c25ee5::BindingPattern::getABindingVarRef#0#dispred#bf_delta (order for disjuncts: delta=317).
+[2023-01-02 14:10:42] (14s) Accumulating deltas
+[2023-01-02 14:10:42] (14s)  >>> Created relation Variables#51c25ee5::BindingPattern::getABindingVarRef#0#dispred#bf/2@825a03hm with 1054 rows.
+[2023-01-02 14:10:42] (14s) Starting to evaluate predicate Variables#51c25ee5::BindingPattern::getABindingVarRef#0#dispred#ff/2@ef36be2e
+[2023-01-02 14:10:42] (14s)  >>> Created relation Variables#51c25ee5::BindingPattern::getABindingVarRef#0#dispred#ff/2@ef36be2e with 82116 rows.
+[2023-01-02 14:10:42] (14s)  >>> Created relation decl/2@46baddj0 with 81062 rows.
+[2023-01-02 14:10:42] (14s) Starting to evaluate predicate Variables#51c25ee5::VarRef::getVariable#0#dispred#bf/2@db7a2271
+[2023-01-02 14:10:42] (15s)  >>> Created relation Variables#51c25ee5::VarRef::getVariable#0#dispred#bf/2@db7a2271 with 81078 rows.
+[2023-01-02 14:10:42] (15s) Starting to evaluate predicate Variables#51c25ee5::BindingPattern::getAVariable#0#dispred#ff/2@9adfffhk
+[2023-01-02 14:10:42] (15s)  >>> Created relation Variables#51c25ee5::BindingPattern::getAVariable#0#dispred#ff/2@9adfffhk with 393391 rows.
+[2023-01-02 14:10:42] (15s) Starting to evaluate predicate Variables#51c25ee5::Variable::getADeclarationStatement#0#dispred#bf/2@517ecdaf
+[2023-01-02 14:10:42] (15s)  >>> Created relation Variables#51c25ee5::Variable::getADeclarationStatement#0#dispred#bf/2@517ecdaf with 225 rows.
+[2023-01-02 14:10:42] (15s) Starting to evaluate predicate Variables#51c25ee5::Variable::getADeclarationStatement#0#dispred#bf_10#join_rhs/2@c00c7asv
+[2023-01-02 14:10:42] (15s)  >>> Created relation Variables#51c25ee5::Variable::getADeclarationStatement#0#dispred#bf_10#join_rhs/2@c00c7asv with 225 rows.
+[2023-01-02 14:10:42] (15s) Starting to evaluate predicate example#fef222b5::get_global_variable_declare_container#2#fff/3@a88043j3
+[2023-01-02 14:10:42] (15s)  >>> Created relation example#fef222b5::get_global_variable_declare_container#2#fff/3@a88043j3 with 45 rows.
+[2023-01-02 14:10:42] (15s) Starting to evaluate predicate example#fef222b5::get_global_variable_declare_container#2#fff_120#join_rhs/3@40891fsj
+[2023-01-02 14:10:42] (15s)  >>> Created relation example#fef222b5::get_global_variable_declare_container#2#fff_120#join_rhs/3@40891fsj with 45 rows.
+[2023-01-02 14:10:42] (15s) Starting to evaluate predicate example#fef222b5::get_global_variable_access_container#2#fff_120#join_rhs/3@dbe86970
+[2023-01-02 14:10:42] (15s)  >>> Created relation example#fef222b5::get_global_variable_access_container#2#fff_120#join_rhs/3@dbe86970 with 8163 rows.
+[2023-01-02 14:10:42] (15s) Starting to evaluate predicate example#fef222b5::judge_sendTransaction#4#ffff/4@a893a979
+[2023-01-02 14:10:42] (15s)  >>> Created relation example#fef222b5::judge_sendTransaction#4#ffff/4@a893a979 with 0 rows.
+[2023-01-02 14:10:42] (15s) Inferred that example#fef222b5::judge_sendTransaction#4#ffff#nonempty/0@77233fri is empty, due to example#fef222b5::judge_sendTransaction#4#ffff/4@a893a979.
+[2023-01-02 14:10:42] (15s) Inferred that _example#fef222b5::judge_sendTransaction#4#ffff#nonempty_example#fef222b5::judge_sendTransactionEth#__#shared/1@89f103gf is empty, due to example#fef222b5::judge_sendTransaction#4#ffff#nonempty/0@77233fri.
+[2023-01-02 14:10:42] (15s) Inferred that _#select#cpe#1#f_AST#4fc16b88::AstNode::getLocation#0#dispred#bf__example#fef222b5::judge_sendTransa__#shared/3@40d25bmr is empty, due to _example#fef222b5::judge_sendTransaction#4#ffff#nonempty_example#fef222b5::judge_sendTransactionEth#__#shared/1@89f103gf.
+[2023-01-02 14:10:42] (15s) Inferred that #select#query#ffffffff/8@35c2abdb is empty, due to _example#fef222b5::judge_sendTransaction#4#ffff#nonempty_example#fef222b5::judge_sendTransactionEth#__#shared/1@89f103gf.
+[2023-01-02 14:10:42] (15s) Inferred that _Locations#c853d51f::Location::hasLocationInfo#5#dispred#bfffff__#select#cpe#1#f_AST#4fc16b88::AstNo__#antijoin_rhs/2@ac08da4f is empty, due to _#select#cpe#1#f_AST#4fc16b88::AstNode::getLocation#0#dispred#bf__example#fef222b5::judge_sendTransa__#shared/3@40d25bmr.
+[2023-01-02 14:10:42] (15s)  >>> Created relation #select#query#ffffffff/8@35c2abdb with 0 rows.
+[2023-01-02 14:10:42] (15s)  >>> Created relation example#fef222b5::judge_sendTransaction#4#ffff#nonempty/0@77233fri with 0 rows.
+[2023-01-02 14:10:42] (15s)  >>> Created relation _example#fef222b5::judge_sendTransaction#4#ffff#nonempty_example#fef222b5::judge_sendTransactionEth#__#shared/1@89f103gf with 0 rows.
+[2023-01-02 14:10:42] (15s)  >>> Created relation _Locations#c853d51f::Location::hasLocationInfo#5#dispred#bfffff__#select#cpe#1#f_AST#4fc16b88::AstNo__#antijoin_rhs/2@ac08da4f with 0 rows.
+[2023-01-02 14:10:42] (15s)  >>> Created relation _#select#cpe#1#f_AST#4fc16b88::AstNode::getLocation#0#dispred#bf__example#fef222b5::judge_sendTransa__#shared/3@40d25bmr with 0 rows.
+[2023-01-02 14:10:42] (15s) Starting to evaluate predicate project#Expr#92cb915f::getConstantString#1#ff/1@38dcbfe7
+[2023-01-02 14:10:42] (15s)  >>> Created relation project#Expr#92cb915f::getConstantString#1#ff/1@38dcbfe7 with 44261 rows.
+[2023-01-02 14:10:42] (15s) Starting to evaluate predicate Expr#92cb915f::getAnAddOperand#1#ff/2@977b01rh
+[2023-01-02 14:10:42] (15s)  >>> Created relation Expr#92cb915f::getAnAddOperand#1#ff/2@977b01rh with 59198 rows.
+[2023-01-02 14:10:42] (15s) Starting to evaluate predicate project#Expr#92cb915f::getAnAddOperand#1#ff/1@bdc265e7
+[2023-01-02 14:10:42] (15s)  >>> Created relation project#Expr#92cb915f::getAnAddOperand#1#ff/1@bdc265e7 with 29599 rows.
+[2023-01-02 14:10:42] (15s) Starting to evaluate predicate _project#Expr#92cb915f::getAnAddOperand#1#ff_project#Expr#92cb915f::getConstantString#1#ff#higher_order_body/1@238bc6ev
+[2023-01-02 14:10:42] (15s)  >>> Created relation _project#Expr#92cb915f::getAnAddOperand#1#ff_project#Expr#92cb915f::getConstantString#1#ff#higher_order_body/1@238bc6ev with 44261 rows.
+[2023-01-02 14:10:42] (15s) Starting to evaluate predicate Expr#92cb915f::getAnAddOperand#1#ff_10#higher_order_body/2@adc4f6pd
+[2023-01-02 14:10:42] (15s)  >>> Created relation Expr#92cb915f::getAnAddOperand#1#ff_10#higher_order_body/2@adc4f6pd with 59198 rows.
+[2023-01-02 14:10:42] (15s) Starting to evaluate predicate boundedFastTC:Expr#92cb915f::getAnAddOperand#1#ff_10#higher_order_body:_project#Expr#92cb915f::getAnAddOperand#1#ff_project#Expr#92cb915f::getConstantString#1#ff#higher_order_body/2@82db99l4 = HOP boundedFastTC(59198,44261)
+[2023-01-02 14:10:42] (15s)  >>> Relation boundedFastTC:Expr#92cb915f::getAnAddOperand#1#ff_10#higher_order_body:_project#Expr#92cb915f::getAnAddOperand#1#ff_project#Expr#92cb915f::getConstantString#1#ff#higher_order_body: 11428 rows using 0 MB
+[2023-01-02 14:10:42] (15s)  >>> Created relation boundedFastTC:Expr#92cb915f::getAnAddOperand#1#ff_10#higher_order_body:_project#Expr#92cb915f::getAnAddOperand#1#ff_project#Expr#92cb915f::getConstantString#1#ff#higher_order_body/2@82db99l4 with 11428 rows.
+[2023-01-02 14:10:42] (15s) Starting to evaluate predicate __project#Expr#92cb915f::getAnAddOperand#1#ff_project#Expr#92cb915f::getConstantString#1#ff#higher_o__#shared/1@9e0b1d21
+[2023-01-02 14:10:42] (15s)  >>> Created relation __project#Expr#92cb915f::getAnAddOperand#1#ff_project#Expr#92cb915f::getConstantString#1#ff#higher_o__#shared/1@9e0b1d21 with 5474 rows.
+[2023-01-02 14:10:42] (15s) Starting to evaluate predicate #Expr#92cb915f::getAnAddOperand#1Plus#ff/2@5bb51a08 = HOP fastTC(59198)
+[2023-01-02 14:10:42] (15s)  >>> Relation #Expr#92cb915f::getAnAddOperand#1Plus#ff: 86040 rows using 2 MB
+[2023-01-02 14:10:42] (15s)  >>> Created relation #Expr#92cb915f::getAnAddOperand#1Plus#ff/2@5bb51a08 with 86040 rows.
+[2023-01-02 14:10:42] (15s) Starting to evaluate predicate _#Expr#92cb915f::getAnAddOperand#1Plus#ff___project#Expr#92cb915f::getAnAddOperand#1#ff_project#Expr__#antijoin_rhs/1@92903bn5
+[2023-01-02 14:10:42] (15s)  >>> Created relation _#Expr#92cb915f::getAnAddOperand#1Plus#ff___project#Expr#92cb915f::getAnAddOperand#1#ff_project#Expr__#antijoin_rhs/1@92903bn5 with 5093 rows.
+[2023-01-02 14:10:42] (15s) Starting to evaluate predicate Expr#92cb915f::hasAllConstantLeafs#1#f/1@9431fegr
+[2023-01-02 14:10:42] (15s)  >>> Created relation Expr#92cb915f::hasAllConstantLeafs#1#f/1@9431fegr with 381 rows.
+[2023-01-02 14:10:42] (15s) Starting to evaluate predicate _Expr#92cb915f::getAnAddOperand#1#ff_10#higher_order_body_Expr#92cb915f::hasAllConstantLeafs#1#f#antijoin_rhs/2@232d1334
+[2023-01-02 14:10:42] (15s)  >>> Created relation _Expr#92cb915f::getAnAddOperand#1#ff_10#higher_order_body_Expr#92cb915f::hasAllConstantLeafs#1#f#antijoin_rhs/2@232d1334 with 56 rows.
+[2023-01-02 14:10:42] (15s) Starting to evaluate predicate _Expr#92cb915f::hasAllConstantLeafs#1#f__Expr#92cb915f::getAnAddOperand#1#ff_10#higher_order_body_Ex__#shared/2@d36a201m
+[2023-01-02 14:10:42] (15s)  >>> Created relation _Expr#92cb915f::hasAllConstantLeafs#1#f__Expr#92cb915f::getAnAddOperand#1#ff_10#higher_order_body_Ex__#shared/2@d36a201m with 325 rows.
+[2023-01-02 14:10:42] (15s) Starting to evaluate predicate _#Expr#92cb915f::getAnAddOperand#1Plus#ff_Expr#92cb915f::getConstantString#1#ff__Expr#92cb915f::hasA__#antijoin_rhs/2@de00f4cn
+[2023-01-02 14:10:42] (15s)  >>> Created relation _#Expr#92cb915f::getAnAddOperand#1Plus#ff_Expr#92cb915f::getConstantString#1#ff__Expr#92cb915f::hasA__#antijoin_rhs/2@de00f4cn with 325 rows.
+[2023-01-02 14:10:42] (15s) Starting to evaluate predicate _#Expr#92cb915f::getAnAddOperand#1Plus#ff__Expr#92cb915f::hasAllConstantLeafs#1#f__Expr#92cb915f::ge__#shared/2@e7dde1u2
+[2023-01-02 14:10:42] (15s)  >>> Created relation _#Expr#92cb915f::getAnAddOperand#1Plus#ff__Expr#92cb915f::hasAllConstantLeafs#1#f__Expr#92cb915f::ge__#shared/2@e7dde1u2 with 762 rows.
+[2023-01-02 14:10:42] (15s) Starting to evaluate predicate _Expr#92cb915f::getConstantString#1#ff__#Expr#92cb915f::getAnAddOperand#1Plus#ff__Expr#92cb915f::has__#sum_range/3@060eb66n
+[2023-01-02 14:10:42] (15s)  >>> Created relation _Expr#92cb915f::getConstantString#1#ff__#Expr#92cb915f::getAnAddOperand#1Plus#ff__Expr#92cb915f::has__#sum_range/3@060eb66n with 706 rows.
+[2023-01-02 14:10:42] (15s) Starting to evaluate predicate _Expr#92cb915f::getConstantString#1#ff__#Expr#92cb915f::getAnAddOperand#1Plus#ff__Expr#92cb915f::has__#sum_term/4@8f02104o
+[2023-01-02 14:10:42] (15s)  >>> Created relation _Expr#92cb915f::getConstantString#1#ff__#Expr#92cb915f::getAnAddOperand#1Plus#ff__Expr#92cb915f::has__#sum_term/4@8f02104o with 706 rows.
+[2023-01-02 14:10:42] (15s) Starting to evaluate predicate __Expr#92cb915f::getConstantString#1#ff__#Expr#92cb915f::getAnAddOperand#1Plus#ff__Expr#92cb915f::ha__#join_rhs/2@b9ee85rt
+[2023-01-02 14:10:42] (15s)  >>> Created relation __Expr#92cb915f::getConstantString#1#ff__#Expr#92cb915f::getAnAddOperand#1Plus#ff__Expr#92cb915f::ha__#join_rhs/2@b9ee85rt with 325 rows.
+[2023-01-02 14:10:42] (15s) Starting to evaluate predicate Expr#92cb915f::SmallConcatRoot#f/1@b9b89bof
+[2023-01-02 14:10:42] (15s)  >>> Created relation Expr#92cb915f::SmallConcatRoot#f/1@b9b89bof with 325 rows.
+[2023-01-02 14:10:42] (15s) Starting to evaluate predicate _#Expr#92cb915f::getAnAddOperand#1Plus#ff_AST#4fc16b88::AstNode::getLocation#0#dispred#ff_Expr#92cb9__#shared/5@d17245ig
+[2023-01-02 14:10:42] (15s)  >>> Created relation _#Expr#92cb915f::getAnAddOperand#1Plus#ff_AST#4fc16b88::AstNode::getLocation#0#dispred#ff_Expr#92cb9__#shared/5@d17245ig with 762 rows.
+[2023-01-02 14:10:42] (15s) Starting to evaluate predicate _Expr#92cb915f::getConstantString#1#ff__#Expr#92cb915f::getAnAddOperand#1Plus#ff_AST#4fc16b88::AstNo__#concat_range/6@6ceb5aea
+[2023-01-02 14:10:42] (15s)  >>> Created relation _Expr#92cb915f::getConstantString#1#ff__#Expr#92cb915f::getAnAddOperand#1Plus#ff_AST#4fc16b88::AstNo__#concat_range/6@6ceb5aea with 706 rows.
+[2023-01-02 14:10:42] (15s) Starting to evaluate predicate _Expr#92cb915f::getConstantString#1#ff__#Expr#92cb915f::getAnAddOperand#1Plus#ff_AST#4fc16b88::AstNo__#concat_term/10@3411712m
+[2023-01-02 14:10:42] (15s)  >>> Created relation _Expr#92cb915f::getConstantString#1#ff__#Expr#92cb915f::getAnAddOperand#1Plus#ff_AST#4fc16b88::AstNo__#concat_term/10@3411712m with 706 rows.
+[2023-01-02 14:10:42] (15s) Starting to evaluate predicate Expr#92cb915f::getConcatenatedString#1#ff/2@i1#3f94bak6 (iteration 1)
+[2023-01-02 14:10:42] (15s) 			 - Expr#92cb915f::getConcatenatedString#1#ff_delta has 325 rows (order for disjuncts: delta=<standard>).
+[2023-01-02 14:10:42] (15s) Starting to evaluate predicate Expr#92cb915f::getConcatenatedString#1#ff/2@i2#3f94bak6 (iteration 2)
+[2023-01-02 14:10:42] (15s) 			 - Expr#92cb915f::getConcatenatedString#1#ff_delta has 19 rows (order for disjuncts: delta=500000).
+[2023-01-02 14:10:42] (15s) Starting to evaluate predicate Expr#92cb915f::getConcatenatedString#1#ff/2@i3#3f94bak6 (iteration 3)
+[2023-01-02 14:10:42] (15s) Empty delta for Expr#92cb915f::getConcatenatedString#1#ff_delta (order for disjuncts: delta=500000).
+[2023-01-02 14:10:42] (15s) Accumulating deltas
+[2023-01-02 14:10:42] (15s)  >>> Created relation Expr#92cb915f::getConcatenatedString#1#ff/2@3f94bak6 with 344 rows.
+[2023-01-02 14:10:42] (15s) Starting to evaluate predicate Expr#92cb915f::Expr::getStringValue#0#dispred#ff/2@78df84d3
+[2023-01-02 14:10:42] (15s)  >>> Created relation Expr#92cb915f::Expr::getStringValue#0#dispred#ff/2@78df84d3 with 44605 rows.
+[2023-01-02 14:10:42] (15s) Promoting strings for predicate Expr#92cb915f::Expr::getStringValue#0#dispred#ff
+[2023-01-02 14:10:42] (15s) Promoted strings in predicate Expr#92cb915f::Expr::getStringValue#0#dispred#ff in memory, took 49ms
+[2023-01-02 14:10:42] (15s) Saving stringpool to save strings from predicate Expr#92cb915f::Expr::getStringValue#0#dispred#ff
+[2023-01-02 14:10:42] (15s) Saved stringpool to save strings from predicate Expr#92cb915f::Expr::getStringValue#0#dispred#ff, took 0ms
+[2023-01-02 14:10:42] (15s)  >>> Created relation Expr#92cb915f::Expr::getStringValue#0#dispred#ff/2@5bf983r4 with 44605 rows.
+[2023-01-02 14:10:42] (15s) Starting to evaluate predicate Constants#db6547f3::ConstantString#f/1@7e9dbcce
+[2023-01-02 14:10:42] (15s)  >>> Created relation Constants#db6547f3::ConstantString#f/1@7e9dbcce with 44605 rows.
+[2023-01-02 14:10:42] (15s) Starting to evaluate predicate Constants#db6547f3::ConstantExpr#class#f/1@9b9cc61q
+[2023-01-02 14:10:42] (15s)  >>> Created relation Constants#db6547f3::ConstantExpr#class#f/1@9b9cc61q with 279679 rows.
+[2023-01-02 14:10:42] (15s) No need to promote strings for predicate Constants#db6547f3::ConstantExpr#class#f  as it does not contain computed strings.
+[2023-01-02 14:10:42] (15s)  >>> Created relation Constants#db6547f3::ConstantExpr#class#f/1@463fa0qp with 279679 rows.
+[2023-01-02 14:10:42] (15s) No need to promote strings for predicate Constants#db6547f3::ConstantString#f  as it does not contain computed strings.
+[2023-01-02 14:10:42] (15s)  >>> Created relation Constants#db6547f3::ConstantString#f/1@57369an6 with 44605 rows.
+[2023-01-02 14:10:42] (15s) Query done
+[2023-01-02 14:10:43] (15s) Sequence stamp origin is -6369952644336205581
+[2023-01-02 14:10:43] (15s) Pausing evaluation to sync to disk at sequence stamp o+0
+[2023-01-02 14:10:43] (15s) Will trim disk cache to check for obsolete items before writing 69.37MiB (currently using 0.00B).
+[2023-01-02 14:10:43] (15s) After trimming, disk cache uses 0.00B.
+[2023-01-02 14:10:43] (15s) Unpausing evaluation
+[2023-01-02 14:10:43] Evaluation of /home/bowen/exercise/codeql_exercise/vscode-codeql-starter/codeql-custom-queries-javascript/template1.ql produced BQRS results.
+[2023-01-02 14:10:43] [PROGRESS] execute queries> [1/1 eval 16s] Evaluation done; writing results to getting-started/codeql-extra-queries-javascript/template1.bqrs.
+[2023-01-02 14:10:43] [PROGRESS] execute queries> Shutting down query evaluator.
+[2023-01-02 14:10:43] Pausing evaluation to close the cache at sequence stamp o+1
+[2023-01-02 14:10:43] Doing closing disk-cache trim now.
+[2023-01-02 14:10:43] After trimming, disk cache uses 12.46MiB.
+[2023-01-02 14:10:43] Unpausing evaluation
+[2023-01-02 14:10:43] Terminating normally.

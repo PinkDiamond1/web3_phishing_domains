@@ -1,0 +1,9 @@
+---
+sourceLocationPrefix: "/home/bowen/phishing/test/js_content/2023-01-02/truspads-cake.com"
+baselineLinesOfCode: 16492
+unicodeNewlines: true
+columnKind: "utf16"
+primaryLanguage: "javascript"
+creationMetadata:
+  cliVersion: "2.11.6"
+  creationTime: "2023-01-02T06:08:47.430252656Z"
